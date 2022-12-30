@@ -1,0 +1,738 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title> </title>
+	<meta charset='utf-8'>
+	<meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
+	<meta name='Title' content='유치원알리미'>
+	<meta name='Subject' content='유치원알리미 클론 코딩'>
+	<meta name='Keywords' content='html5, css3, 웹표준, 관공소, 유치원알리미'>
+	<meta name='Author' content='mihwa'>
+	<meta name='Publisher' content='mihwa'>
+	<meta name='Description' content='웹접근성, 웹표준을 준수한 유치원알리미 클론 코딩입니다.'>
+	<meta name='Author-Date' content='2022/10/31'>
+	<meta name='Robots' content='index,follow'>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="header-pop">
+        <div class="container">
+            <p>전문가가 필요한 순간, 크몽</p>
+            <span>신규가입하고&nbsp;<b>10만원 쿠폰팩</b>&nbsp;받아가세요!&nbsp;&nbsp;&gt;</span>
+        </div>
+    </div>
+    <header id="header">
+        <div class="container">
+            <div class="header-top">
+                <a aria-label="logo" href="#" ><svg width="85" height="100%" viewBox="0 0 85 26" xmlns="http://www.w3.org/2000/svg"><path d="M77.69 4.86c3.975 0 7.197 3.215 7.197 7.18l-.002.055h.002c.073 3.477.074 5.769.003 6.874-.108 1.659-.724 3.372-1.947 4.693A7.21 7.21 0 0 1 77.593 26c-2.724 0-4.998-.984-6.653-2.921l-.05-.059 3.226-2.684c.837.997 1.938 1.48 3.478 1.48.9 0 1.67-.358 2.259-.992.515-.556.817-1.263.832-1.813v-.443a7.186 7.186 0 0 1-2.995.65c-3.975 0-7.197-3.214-7.197-7.179 0-3.964 3.222-7.178 7.197-7.178zm-32.13-.225c4.131 0 7.48 3.34 7.48 7.46 0 4.121-3.349 7.462-7.48 7.462s-7.48-3.34-7.48-7.461c0-4.12 3.349-7.461 7.48-7.461zM4.533 0v10.354L8.623 5.2h5.309l-5.337 6.726 5.572 7.065h-4.98L4.534 13.42v5.572H0V0h4.533zM29.92 4.86a6.233 6.233 0 0 1 6.233 6.234v7.897H31.96v-7.908a2.04 2.04 0 0 0-4.074-.152l-.006.152v7.908h-4.193v-7.908a2.04 2.04 0 0 0-4.075-.152l-.005.152v7.908h-4.194v-7.897a6.233 6.233 0 0 1 10.371-4.662 6.201 6.201 0 0 1 4.136-1.571zm31.847 0a6.8 6.8 0 0 1 6.8 6.8v7.331h-4.194v-7.34a2.607 2.607 0 0 0-2.441-2.602l-.165-.006a2.607 2.607 0 0 0-2.602 2.442l-.005.165v7.34l-4.193.001v-7.33a6.8 6.8 0 0 1 6.8-6.8zM45.56 8.818a3.282 3.282 0 0 0-3.287 3.279 3.282 3.282 0 0 0 3.287 3.278 3.282 3.282 0 0 0 3.287-3.278 3.282 3.282 0 0 0-3.287-3.279zm32.13.226a3 3 0 0 0-3.003 2.996 3 3 0 0 0 3.003 2.996 3 3 0 0 0 3.003-2.996 3 3 0 0 0-3.003-2.996z" fill="#212224" fill-rule="evenodd"></path></svg></a>
+                <div style="flex-grow:1"></div>
+                <form role="search">
+                    <input type="text" placeholder="검색어를 입력하세요" maxlength="30" autocomplete="off">
+                    <span role="img">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" class="css-7kp13n e181xm9y0"><path xmlns="http://www.w3.org/2000/svg" d="M11.2307008,3.5 C15.5002489,3.5 18.9614015,6.96828437 18.9614015,11.24663 C18.9614015,13.0978372 18.3133954,14.7973826 17.2322825,16.1299241 L20.2742127,19.178378 C20.5762688,19.4810023 20.5764739,19.9714482 20.2746708,20.2738195 C19.9728678,20.5761908 19.4833433,20.5759857 19.1812873,20.2733614 L19.1812873,20.2733614 L16.1426973,17.2288066 C14.8071694,18.3312107 13.0960911,18.9932599 11.2307008,18.9932599 C6.96115262,18.9932599 3.5,15.5249756 3.5,11.24663 C3.5,6.96828437 6.96115262,3.5 11.2307008,3.5 Z M11.2307008,5.04932599 C7.81506225,5.04932599 5.04614015,7.82395349 5.04614015,11.24663 C5.04614015,14.6693064 7.81506225,17.4439339 11.2307008,17.4439339 C14.6463393,17.4439339 17.4152614,14.6693064 17.4152614,11.24663 C17.4152614,7.82395349 14.6463393,5.04932599 11.2307008,5.04932599 Z"></path></svg>
+                    </span>
+                </form>
+                <div class="headerEl">
+                    <button type="button" class="proBtn">전문가 등록</button>
+                    <button type="button" class="logBtn">로그인</button>
+                    <a role="link" href="#" class="joinBtn">무료 회원가입</a>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="menu">
+                    <button type="button" class="menuButton">
+                        <span role="img" rotate="0" class="menuBar"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" class="css-7kp13n e181xm9y0"><path xmlns="http://www.w3.org/2000/svg" d="M19,17 C19.5522847,17 20,17.4477153 20,18 C20,18.5522847 19.5522847,19 19,19 L5,19 C4.44771525,19 4,18.5522847 4,18 C4,17.4477153 4.44771525,17 5,17 L19,17 Z M19,11 C19.5522847,11 20,11.4477153 20,12 C20,12.5522847 19.5522847,13 19,13 L5,13 C4.44771525,13 4,12.5522847 4,12 C4,11.4477153 4.44771525,11 5,11 L19,11 Z M19,5 C19.5522847,5 20,5.44771525 20,6 C20,6.55228475 19.5522847,7 19,7 L5,7 C4.44771525,7 4,6.55228475 4,6 C4,5.44771525 4.44771525,5 5,5 L19,5 Z"></path></svg></span>
+                        <span class="menuCategory">전체 카테고리</span>
+                        <span role="img" class="menuArrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" class="css-7kp13n e181xm9y0"><polygon id="Triangle" transform="translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) " points="12 9 18 15 6 15"></polygon></svg></span>
+                        <div class="menuButton-bar"></div>
+                    </button>
+                    <div class="menuWrap">
+                        <div class="menu-area">
+                            <!-- <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" class="css-7kp13n e181xm9y0"><path xmlns="http://www.w3.org/2000/svg" d="M9.41421356,12 L15.7071068,5.70710678 C16.0976311,5.31658249 16.0976311,4.68341751 15.7071068,4.29289322 C15.3165825,3.90236893 14.6834175,3.90236893 14.2928932,4.29289322 L7.29289322,11.2928932 C6.90236893,11.6834175 6.90236893,12.3165825 7.29289322,12.7071068 L14.2928932,19.7071068 C14.6834175,20.0976311 15.3165825,20.0976311 15.7071068,19.7071068 C16.0976311,19.3165825 16.0976311,18.6834175 15.7071068,18.2928932 L9.41421356,12 Z" transform="translate(11.500000, 12.000000) scale(-1, 1) translate(-11.500000, -12.000000) "></path></svg> -->
+                            <ul>
+                                <li class="menuTitle"><p>비즈니스</p></li>
+                                <li><a href="#" data-board="board01">디자인</a></li>
+                                <li><a href="#" data-board="board02">IT∙프로그래밍</a></li>
+                                <li><a href="#" data-board="board03">영상∙사진∙음향</a></li>
+                                <li><a href="#" data-board="board04">마케팅</a></li>
+                                <li><a href="#" data-board="board05">번역∙통역</a></li>
+                                <li><a href="#" data-board="board06">문서∙글쓰기</a></li>
+                                <li><a href="#" data-board="board07">경영지문∙운영지원</a></li>
+                                <li><a href="#" data-board="board08">주문제작</a></li>
+                                <li><a href="#" data-board="board09">세무∙법무∙노무</a></li>
+                                <li class="menuTitle"><p>N잡∙커리어</p></li>
+                                <li><a href="#" data-board="board10">취업∙입시</a></li>
+                                <li><a href="#" data-board="board11">투잡∙노하우</a></li>
+                                <li><a href="#" data-board="board12">직무역량</a></li>
+                                <li class="menuTitle"><p>취미∙생활</p></li>
+                                <li><a href="#" data-board="board13">운세</a></li>
+                                <li><a href="#" data-board="board14">심리상담</a></li>
+                                <li><a href="#" data-board="board15">취미</a></li>
+                                <li><a href="#" data-board="board16">생활서비스</a></li> 
+                            </ul>
+                        </div>
+                        <div class="subMenu-area on" id="board01">
+                            <div class="subMenu-box">
+                                <ul>
+                                    <li class="menuTitle"><p>로고∙브랜딩</p></li>
+                                    <li><a href="#">로고디자인</a></li>
+                                    <li><a href="#">브랜드 디자인∙가이드</a></li>
+                                    <li class="menuTitle"><p>인쇄∙홍보물</p></li>
+                                    <li><a href="#">명함</a></li>
+                                    <li><a href="#">전단지∙포스터∙인쇄물</a></li>
+                                    <li><a href="#">현수막∙X배너</a></li>
+                                    <li><a href="#">메뉴판</a></li>
+                                    <li><a href="#">홍보물 인쇄∙출력</a></li>
+                                    <li><a href="#">스티커∙봉투∙초대장</a></li>
+                                    <li class="menuTitle"><p>패키지∙커버</p></li>
+                                    <li><a href="#">패키지</a></li>
+                                    <li><a href="#">책표지∙내지</a></li>
+                                    <li><a href="#">전자팩 표지∙내지</a></li>
+                                    <li><a href="#">앨범커버</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>웹∙모바일 디자인</p></li>
+                                    <li><a href="#">웹 디자인</a></li>
+                                    <li><a href="#">웹∙모바일 디자인</a></li>
+                                    <li><a href="#">템플릿형 홈페이지</a></li>
+                                    <li><a href="#">아이콘∙버튼</a></li>
+                                    <li class="menuTitle"><p>마케팅 디자인</p></li>
+                                    <li><a href="#">상세페이지</a></li>
+                                    <li><a href="#">블로그∙카페디자인</a></li>
+                                    <li><a href="#">SNS∙썸네일 디자인</a></li>
+                                    <li><a href="#">배너∙배달어플</a></li>
+                                    <li class="menuTitle"><p>산업∙제품 디자인</p></li>
+                                    <li><a href="#">제품 모델링∙렌더링</a></li>
+                                    <li><a href="#">제품∙가구 설계</a></li>
+                                    <li><a href="#">제품 도면∙스케치</a></li>
+                                    <li><a href="#">시제품∙3D프린팅</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>캐릭터∙일러스트</p></li>
+                                    <li><a href="#">일러스트</a></li>
+                                    <li><a href="#">캐리커쳐</a></li>
+                                    <li><a href="#">웹툰∙콘티</a></li>
+                                    <li><a href="#">캐릭터</a></li>
+                                    <li><a href="#">이모티콘</a></li>
+                                    <li class="menuTitle"><p>게임∙웹3.0</p></li>
+                                    <li><a href="#">VR∙AR∙게임</a></li>
+                                    <li><a href="#">메타버스</a></li>
+                                    <li><a href="#">NFT아트</a></li>
+                                    <li class="menuTitle"><p>캘리그라피∙폰트</p></li>
+                                    <li><a href="#">캘리그라피</a></li>
+                                    <li><a href="#">폰트</a></li>
+                                    <li><a href="#">사인∙직인</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>공간∙건축</p></li>
+                                    <li><a href="#">도면 제작∙수정</a></li>
+                                    <li><a href="#">인테리어 컨설팅</a></li>
+                                    <li><a href="#">전시∙무대 디자인</a></li>
+                                    <li><a href="#">간판∙시공</a></li>
+                                    <li class="menuTitle"><p>패션∙텍스타일</p></li>
+                                    <li><a href="#">의류∙쥬얼리 디자인</a></li>
+                                    <li><a href="#">작업지시서∙도식화</a></li>
+                                    <li><a href="#">패턴∙샘플 제작</a></li>
+                                    <li class="menuTitle"><p>그래픽 디자인</p></li>
+                                    <li><a href="#">PPT∙인포그래픽</a></li>
+                                    <li><a href="#">포토샵∙파일변환</a></li>
+                                    <li class="menuTitle"><p>기타</p></li>
+                                    <li><a href="#">템플릿</a></li>
+                                    <li><a href="#">디자인 템플릿</a></li>
+                                    <li><a href="#">바코드∙QR코드</a></li>
+                                    <li><a href="#">기타</a></li>
+                                </ul>
+                                <a href="#"><img src="./img/R7AGR_curated_content_item_directory_banner_desktop_701.webp" alt="설명절디자인 바로가기 이미지"></a>
+                            </div>
+                        </div>
+                        <div class="subMenu-area" id="board02">
+                            <div class="subMenu-box">
+                                <ul>
+                                    <li class="menuTitle"><p>UX 기획</p></li>
+                                    <li><a href="#">웹∙모바일 기획</a></li>
+                                    <li><a href="#">프로그램∙기타 기획</a></li>
+                                    <li class="menuTitle"><p>웹</p></li>
+                                    <li><a href="#">홈페이지</a></li>
+                                    <li><a href="#">홈페이지(웹빌더∙CMS)</a></li>
+                                    <li><a href="#">홈페이지(카페24)</a></li>
+                                    <li><a href="#">홈페이지(워드프레스)</a></li>
+                                    <li><a href="#">랜딩페이지</a></li>
+                                    <li><a href="#">프론트엔드∙퍼블리싱</a></li>
+                                    <li><a href="#">검색최적화∙SEO</a></li>
+                                    <li><a href="#">애널리틱스</a></li>
+                                    <li><a href="#">홈페이지 수정∙유지보수</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>커머스</p></li>
+                                    <li><a href="#">쇼핑몰</a></li>
+                                    <li><a href="#">쇼핑몰(웹빌더∙CMS)</a></li>
+                                    <li><a href="#">쇼핑몰(카페24)</a></li>
+                                    <li><a href="#">쇼핑몰(아임웹)</a></li>
+                                    <li><a href="#">쇼핑몰 수정∙유지보수</a></li>
+                                    <li class="menuTitle"><p>모바일</p></li>
+                                    <li><a href="#">앱</a></li>
+                                    <li><a href="#">앱 수정∙유지보수</a></li>
+                                    <li class="menuTitle"><p>프로그램</p></li>
+                                    <li><a href="#">비즈니스 애플리케이션</a></li>
+                                    <li><a href="#">PC∙웹 프로그램</a></li>
+                                    <li><a href="#">백엔드∙서버</a></li>
+                                    <li><a href="#">봇∙챗봇</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>트렌드</p></li>
+                                    <li><a href="#">노코드∙로우코드</a></li>
+                                    <li><a href="#">메타버스</a></li>
+                                    <li><a href="#">블록체인∙NFT</a></li>
+                                    <li class="menuTitle"><p>데이터</p></li>
+                                    <li><a href="#">데이터 구매∙구축</a></li>
+                                    <li><a href="#">데이터 마이닝∙크롤링</a></li>
+                                    <li><a href="#">데이터 전처리</a></li>
+                                    <li><a href="#">데이터 라벨링</a></li>
+                                    <li><a href="#">데이터 분석∙시각화</a></li>
+                                    <li><a href="#">인공지능∙러신머닝</a></li>
+                                    <li><a href="#">데이터베이스</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>언리얼</p></li>
+                                    <li><a href="#">2D∙3D 게임</a></li>
+                                    <li><a href="#">AR∙VR</a></li>
+                                    <li class="menuTitle"><p>기타</p></li>
+                                    <li><a href="#">하드웨어∙임베디드</a></li>
+                                    <li><a href="#">보안</a></li>
+                                    <li><a href="#">QA∙테스트</a></li>
+                                    <li><a href="#">컴퓨터 기술지원</a></li>
+                                    <li><a href="#">파일변환</a></li>
+                                    <li><a href="#">기타</a></li>
+                                </ul>
+                                <a href="#"><img src="./img/WuI0W_curated_content_item_directory_banner_desktop_1037.webp" alt="코딩없는 MVP개발 바로가기"></a>
+                            </div>
+                        </div>
+                        <div class="subMenu-area" id="board03">
+                            <div class="subMenu-box">
+                                <ul>
+                                    <li class="menuTitle"><p>영상</p></li>
+                                    <li><a href="#">광고∙홍보 영상</a></li>
+                                    <li><a href="#">제품 영상</a></li>
+                                    <li><a href="#">교육 영상</a></li>
+                                    <li><a href="#">행사 영상</a></li>
+                                    <li><a href="#">유튜브 영상</a></li>
+                                    <li><a href="#">온라인 중계</a></li>
+                                    <li><a href="#">드론 촬영</a></li>
+                                    <li><a href="#">컴퓨터 그래픽(CG)</a></li>
+                                    <li><a href="#">애니메이션</a></li>
+                                    <li><a href="#">영상 후반작업</a></li>
+                                    <li><a href="#">영상 기타</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>사진</p></li>
+                                    <li><a href="#">제품∙홍보 사진</a></li>
+                                    <li><a href="#">개인∙이벤트 사진</a></li>
+                                    <li><a href="#">사진 보정</a></li>
+                                    <li class="menuTitle"><p>음향</p></li>
+                                    <li><a href="#">성우</a></li>
+                                    <li><a href="#">음악∙음원</a></li>
+                                    <li><a href="#">오디오 콘텐츠</a></li>
+                                    <li><a href="#">오디오 엔지니어링</a></li>
+                                    <li><a href="#">기타 음향∙음악</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>엔터테이너</p></li>
+                                    <li><a href="#">모델</a></li>
+                                    <li><a href="#">쇼호스트</a></li>
+                                    <li><a href="#">MC</a></li>
+                                    <li><a href="#">공연</a></li>
+                                    <li class="menuTitle"><p>기타</p></li>
+                                    <li><a href="#">콘티∙스토리보드</a></li>
+                                    <li><a href="#">헤어메이크업</a></li>
+                                    <li><a href="#">스튜디오 렌탈</a></li>
+                                    <li><a href="#">기타</a></li>
+                                </ul>
+                                <a href="#"><img src="./img/T6rNj_curated_content_item_directory_banner_desktop_741.webp" alt="전문가의 손길로 재탄생, 바로가기"></a>
+                            </div>
+                        </div>
+                        <div class="subMenu-area" id="board04">
+                            <dic class="subMenu-box">
+                                <ul>
+                                    <li class="menuTitle"><p>채널 활성화</p></li>
+                                    <li><a href="#">블로그 관리</a></li>
+                                    <li><a href="#">카페 관리</a></li>
+                                    <li><a href="#">인스타그램 관리</a></li>
+                                    <li><a href="#">유튜브 관리</a></li>
+                                    <li><a href="#">기타 채널 관리</a></li>
+                                    <li class="menuTitle"><p>바이럴∙체험단</p></li>
+                                    <li><a href="#">체험단∙기자단</a></li>
+                                    <li><a href="#">개인 인플루언서</a></li>
+                                    <li><a href="#">바이럴∙포스팅</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>업종∙목적별</p></li>
+                                    <li><a href="#">종합광고대행</a></li>
+                                    <li><a href="#">스토어 마케팅</a></li>
+                                    <li><a href="#">업종별 마케팅 패키지</a></li>
+                                    <li><a href="#">CPA 마케팅</a></li>
+                                    <li><a href="#">라이브 커머스</a></li>
+                                    <li><a href="#">메시지 마케팅</a></li>
+                                    <li class="menuTitle"><p>최적화 노출</p></li>
+                                    <li><a href="#">검색최적화∙SEO</a></li>
+                                    <li><a href="#">웹 트래픽</a></li>
+                                    <li><a href="#">지도 최적화</a></li>
+                                    <li><a href="#">앱마케팅</a></li>
+                                    <li><a href="#">포털질문∙답변</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>광고(퍼포먼스)</p></li>
+                                    <li><a href="#">SNS 광고</a></li>
+                                    <li><a href="#">키워드∙검색광고</a></li>
+                                    <li><a href="#">디스플레이∙영상∙배너</a></li>
+                                    <li class="menuTitle"><p>PR∙행사</p></li>
+                                    <li><a href="#">언론홍보</a></li>
+                                    <li><a href="#">행사∙이벤트</a></li>
+                                    <li class="menuTitle"><p>분석∙전략</p></li>
+                                    <li><a href="#">마케팅 컨설팅</a></li>
+                                    <li><a href="#">브랜드 컨설팅</a></li>
+                                    <li><a href="#">데이터 성과 분석</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>옥외∙인쇄∙방송 광고</p></li>
+                                    <li><a href="#">버스∙지하철∙택시</a></li>
+                                    <li><a href="#">전광판∙키오스트</a></li>
+                                    <li><a href="#">신문∙잡지</a></li>
+                                    <li><a href="#">TV∙라디오</a></li>
+                                    <li class="menuTitle"><p>해외 마케팅</p></li>
+                                    <li><a href="#">해외 언론홍보</a></li>
+                                    <li><a href="#">해외 검색</a></li>
+                                    <li><a href="#">해외 SNS</a></li>
+                                    <li><a href="#">기타 해외 마케팅</a></li>
+                                    <li class="menuTitle"><p>기타 마케팅</p></li>
+                                    <li><a href="#">커뮤니티∙사이트 배너</a></li>
+                                    <li><a href="#">영상 광고</a></li>
+                                    <li><a href="#">마케팅 자료∙키워드</a></li>
+                                    <li><a href="#">기타</a></li>
+                                </ul>
+                                <a href="#"><img src="./img/sSukt_curated_content_item_directory_banner_desktop_1083.webp" alt="겨울방학&새학기 원생모집 바로가기"></a>
+                            </dic>
+                        </div>
+                        <div class="subMenu-area" id="board05">
+                            <div class="subMenu-box">
+                                <ul>
+                                    <li class="menuTitle"><p>번역</p></li>
+                                    <li><a href="#">영어 번역</a></li>
+                                    <li><a href="#">중국어 번역</a></li>
+                                    <li><a href="#">일본어 번역</a></li>
+                                    <li><a href="#">기타 언어 번역</a></li>
+                                    <li><a href="#">감수</a></li>
+                                    <li><a href="#">번역공증대행</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>통역</p></li>
+                                    <li><a href="#">영어 통역</a></li>
+                                    <li><a href="#">중국어 통역</a></li>
+                                    <li><a href="#">일본어 통역</a></li>
+                                    <li><a href="#">기타 언어 통역</a></li>
+                                </ul>
+                                <a href="#"><img src="./img/k0APY_curated_content_item_directory_banner_desktop_704.webp" alt="당일번역, 신속 번역 전문가 바로가기"></a>
+                            </div>
+                        </div>
+                        <div class="subMenu-area" id="board06">
+                            <div class="subMenu-box">
+                                <ul>
+                                    <li class="menuTitle"><p>비즈니스 카피</p></li>
+                                    <li><a href="#">네이밍∙브랜딩</a></li>
+                                    <li><a href="#">제품 카피라이팅</a></li>
+                                    <li><a href="#">광고 카피라이팅</a></li>
+                                    <li><a href="#">산업별 전문 글작성</a></li>
+                                    <li class="menuTitle"><p>마케팅 글쓰기</p></li>
+                                    <li><a href="#">블로그∙카페 원고</a></li>
+                                    <li><a href="#">보도자료∙기사∙칼럼</a></li>
+                                    <li><a href="#">SNS 카피라이팅</a></li>
+                                    <li><a href="#">Email 글쓰기</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>콘텐츠 글쓰기</p></li>
+                                    <li><a href="#">UX 라이팅</a></li>
+                                    <li><a href="#">웹사이트∙SEO</a></li>
+                                    <li><a href="#">책∙전자책 출판</a></li>
+                                    <li class="menuTitle"><p>스토리텔링</p></li>
+                                    <li><a href="#">홍보 시나리오</a></li>
+                                    <li><a href="#">온라인 강의 콘텐츠</a></li>
+                                    <li><a href="#">유튜브∙방송 대본</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>타이핑∙첨삭</p></li>
+                                    <li><a href="#">타이핑(문서)</a></li>
+                                    <li><a href="#">타이핑(영상)</a></li>
+                                    <li><a href="#">교정∙교열 첨삭</a></li>
+                                    <li class="menuTitle"><p>기타</p></li>
+                                    <li><a href="#">논문</a></li>
+                                    <li><a href="#">맞춤양식</a></li>
+                                    <li><a href="#">이력서 교정</a></li>
+                                    <li><a href="#">문서 자료</a></li>
+                                    <li><a href="#">기타</a></li>
+                                </ul>
+                                <a href="#"><img src="./img/VTjwK_curated_content_item_directory_banner_desktop_1051.webp" alt="블로그 원고 재구매 베스트 바로가기"></a>
+                            </div>
+                        </div>
+                        <div class="subMenu-area" id="board07">
+                            <div class="subMenu-box">
+                                <ul>
+                                    <li class="menuTitle"><p>사업계획</p></li>
+                                    <li><a href="#">사업계획서∙투자제안서</a></li>
+                                    <li><a href="#">리서치</a></li>
+                                    <li class="menuTitle"><p>스타트업 지문</p></li>
+                                    <li><a href="#">비전∙미션∙초기브랜딩</a></li>
+                                    <li><a href="#">개인∙조직 목표 관리</a></li>
+                                    <li><a href="#">팀 빌딩∙애자일</a></li>
+                                    <li><a href="#">핵심 인재 유치</a></li>
+                                    <li><a href="#">스타트업 인사 자문</a></li>
+                                    <li><a href="#">스타트업 투자 유치</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>기업 자문</p></li>
+                                    <li><a href="#">일반 경영 자문</a></li>
+                                    <li><a href="#">브랜딩</a></li>
+                                    <li><a href="#">영업 전략∙관리</a></li>
+                                    <li><a href="#">물류∙생산</a></li>
+                                    <li><a href="#">HR∙기업문화</a></li>
+                                    <li><a href="#">해외 사업∙해외 진출</a></li>
+                                    <li><a href="#">IT 컨설팅</a></li>
+                                    <li><a href="#">재무 자문</a></li>
+                                    <li><a href="#">운영 지원</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>업종별 창업</p></li>
+                                    <li><a href="#">온라인 쇼핑몰 창업</a></li>
+                                    <li><a href="#">카페∙요식업</a></li>
+                                    <li><a href="#">미용∙패션∙뷰티</a></li>
+                                    <li><a href="#">병원∙약국</a></li>
+                                    <li><a href="#">변호사∙세무사 사무실</a></li>
+                                    <li><a href="#">프랜차이즈</a></li>
+                                    <li><a href="#">무인점포∙공간대여</a></li>
+                                    <li><a href="#">반여동물</a></li>
+                                    <li><a href="#">기타 창업</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>자료∙콘텐츠</p></li>
+                                    <li><a href="#">비즈니스 문서</a></li>
+                                    <li class="menuTitle"><p>기타</p></li>
+                                    <li><a href="#">기타 자문∙지원</a></li>
+                                </ul>
+                                <a href="#"><img src="./img/LsfdG_curated_content_item_directory_banner_desktop_967.webp" alt="사업체 토탈솔루션 바로가기"></a>
+                            </div>
+                        </div>
+                        <div class="subMenu-area" id="board08">
+                            <div class="subMenu-box">
+                                <ul>
+                                    <li class="menuTitle"><p>인쇄∙판톡물</p></li>
+                                    <li><a href="#">인쇄</a></li>
+                                    <li><a href="#">3D프린팅</a></li>
+                                    <li><a href="#">패키지 제작</a></li>
+                                    <li><a href="#">가게용품 제작</a></li>
+                                    <li><a href="#">기념품 제작</a></li>
+                                    <li><a href="#">모형 제작</a></li>
+                                    <li><a href="#">제품 제작</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>시공</p></li>
+                                    <li><a href="#">간판</a></li>
+                                    <li><a href="#">인테리어 시공</a></li>
+                                    <li class="menuTitle"><p>기타</p></li>
+                                    <li><a href="#">기타</a></li>
+                                </ul>
+                                <a href="#"><img src="./img/MXqGH_curated_content_item_directory_banner_desktop_486.webp" alt="기념품 판촉물 제작 바로가기"></a>
+                            </div>
+                        </div>
+                        <div class="subMenu-area" id="board09">
+                            <div class="subMenu-box">
+                                <ul>
+                                    <li class="menuTitle"><p>법무</p></li>
+                                    <li><a href="#">사업자 법률 자문</a></li>
+                                    <li><a href="#">개인 법률 자문</a></li>
+                                    <li><a href="#">법무∙행정</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>세무∙회계</p></li>
+                                    <li><a href="#">사업자 세무∙회계</a></li>
+                                    <li><a href="#">개인 세무∙회계</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>지식재산권 보호</p></li>
+                                    <li><a href="#">국내 특허∙상표</a></li>
+                                    <li><a href="#">해외 특허∙상표</a></li>
+                                    <li><a href="#">지식∙산업재산권 일반</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>노무</p></li>
+                                    <li><a href="#">고용인 노무 상담</a></li>
+                                    <li><a href="#">근로자 노무 상담</a></li>
+                                    <li><a href="#">근로계약서 상담</a></li>
+                                    <li><a href="#">고용지원금 상담</a></li>
+                                    <li class="menuTitle"><p>기타</p></li>
+                                    <li><a href="#">기타 자문(관세사 등)</a></li>
+                                </ul>
+                                <a href="#"><img src="./img/GwLeT_curated_content_item_directory_banner_desktop_1069.webp" alt="연말정산 바로가기"></a>
+                            </div>
+                        </div>
+                        <div class="subMenu-area" id="board10">
+                            <div class="subMenu-box">
+                                <ul>
+                                    <li class="menuTitle"><p>취업∙이직</p></li>
+                                    <li><a href="#">국내 자소서∙이력서</a></li>
+                                    <li><a href="#">외국계 자소서∙이력서</a></li>
+                                    <li><a href="#">인적성∙NCS필기</a></li>
+                                    <li><a href="#">면접∙커리어 컨설팅</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>입시∙자격증</p></li>
+                                    <li><a href="#">자격증</a></li>
+                                    <li><a href="#">대학 입시</a></li>
+                                    <li><a href="#">편입∙검정고시</a></li>
+                                    <li><a href="#">대학원∙유학</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>전자책∙VOD</p></li>
+                                    <li><a href="#">취업∙입시 VOD</a></li>
+                                    <li><a href="#">취업∙입시 전자책</a></li>
+                                    <li><a href="#">취업∙입시 자료</a></li>
+                                    <li><a href="#">교육 전자책</a></li>
+                                    <li><a href="#">교육 자료</a></li>
+                                </ul>
+                                <a href="#"><img src="./img/3NrGf_curated_content_item_directory_banner_desktop_712.webp" alt="취업 전문가 바로가기"></a>
+                            </div>
+                        </div>
+                        <div class="subMenu-area" id="board11">
+                            <div class="subMenu-box">
+                                <ul>
+                                    <li class="menuTitle"><p>투잡∙재테크</p></li>
+                                    <li><a href="#">투잡∙재테크 컨설팅</a></li>
+                                    <li><a href="#">N잡 스쿨</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>전자책∙VOD</p></li>
+                                    <li><a href="#">투잡∙창업 VOD</a></li>
+                                    <li><a href="#">금융∙재테크 VOD</a></li>
+                                    <li><a href="#">투잡∙재테크 전자책</a></li>
+                                    <li><a href="#">창업 전자책</a></li>
+                                    <li><a href="#">투잡∙재테크 자료</a></li>
+                                </ul>
+                                <a href="#"><img src="./img/v7z3O_curated_content_item_directory_banner_desktop_1084.webp" alt="돈 버는 법 바로가기"></a>
+                            </div>
+                        </div>
+                        <div class="subMenu-area" id="board12">
+                            <div class="subMenu-box">
+                                <ul>
+                                    <li class="menuTitle"><p>데이터∙개발</p></li>
+                                    <li><a href="#">프로그래밍 레슨</a></li>
+                                    <li><a href="#">데이터분석 레슨</a></li>
+                                    <li class="menuTitle"><p>실무∙자기개발</p></li>
+                                    <li><a href="#">마케팅 레슨</a></li>
+                                    <li><a href="#">PPT∙프레젠테이션 레슨</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>외국어</p></li>
+                                    <li><a href="#">영어 레슨</a></li>
+                                    <li><a href="#">기타 외국어 레슨</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>디자인∙영상</p></li>
+                                    <li><a href="#">그래픽디자인 레슨</a></li>
+                                    <li><a href="#">사진 레슨</a></li>
+                                    <li><a href="#">영상∙유튜브 레슨</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>전자책∙VOD</p></li>
+                                    <li><a href="#">직무역량 VOD</a></li>
+                                    <li><a href="#">직무스킬 전자책</a></li>
+                                    <li class="menuTitle"><p>기타</p></li>
+                                    <li><a href="#">기타 직무역량 레슨</a></li>
+                                </ul>
+                                <a href="#"><img src="./img/7ggar_curated_content_item_directory_banner_desktop_1073.webp" alt="개발 왕초보 원데이 강의모음 바로가기"></a>
+                            </div>
+                        </div>
+                        <div class="subMenu-area" id="board13">
+                            <div class="subMenu-box">
+                                <ul>
+                                    <li class="menuTitle"><p>분야별 운세</p></li>
+                                    <li><a href="#">신점</a></li>
+                                    <li><a href="#">사주</a></li>
+                                    <li><a href="#">타로</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>주제별 운세</p></li>
+                                    <li><a href="#">작명</a></li>
+                                    <li><a href="#">연애∙애정∙궁합</a></li>
+                                    <li><a href="#">오늘의 운세</a></li>
+                                    <li><a href="#">재물운</a></li>
+                                    <li><a href="#">길일</a></li>
+                                    <li><a href="#">진로∙적성</a></li>
+                                    <li><a href="#">풍수지리</a></li>
+                                    <li><a href="#">관상∙손금</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>기타</p></li>
+                                    <li><a href="#">기타</a></li>
+                                </ul>
+                                <a href="#"><img src="./img/xBqL8_curated_content_item_directory_banner_desktop_817.webp" alt="연애컨설팅 바로가기"></a>
+                            </div>
+                        </div>
+                        <div class="subMenu-area" id="board14">
+                            <div class="subMenu-box">
+                                <ul>
+                                    <li class="menuTitle"><p>심리 검사</p></li>
+                                    <li><a href="#">MBTI(성향∙검사)</a></li>
+                                    <li><a href="#">TCI(기질∙성격)</a></li>
+                                    <li><a href="#">MMPI(성격∙적응)</a></li>
+                                    <li><a href="#">SCT(욕구∙관계)</a></li>
+                                    <li><a href="#">버크만진단(적성∙일)</a></li>
+                                    <li><a href="#">그림검사(속마음)</a></li>
+                                    <li><a href="#">시타 검사</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>상담사 상담</p></li>
+                                    <li><a href="#">전문가 상담</a></li>
+                                    <li><a href="#">육아∙아동∙청소년 상담</a></li>
+                                    <li><a href="#">부부∙가족 상담</a></li>
+                                    <li class="menuTitle"><p>연애∙고민 상담</p></li>
+                                    <li><a href="#">연애 상담</a></li>
+                                    <li><a href="#">고민 상담</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>기업 상담(EAP)∙강연</p></li>
+                                    <li><a href="#">기업 상담(EAP)</a></li>
+                                    <li><a href="#">강연∙워크샵</a></li>
+                                    <li class="menuTitle"><p>코칭</p></li>
+                                    <li><a href="#">성공마인드 코칭</a></li>
+                                    <li><a href="#">명상 코칭</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>심리 치료</p></li>
+                                    <li><a href="#">심리 치료</a></li>
+                                </ul>
+                                <a href="#"><img src="./img/bpcNE_curated_content_item_directory_banner_desktop_845.webp" alt="심리상담 바로가기"></a>
+                            </div>
+                        </div>
+                        <div class="subMenu-area" id="board15">
+                            <div class="subMenu-box">
+                                <ul>
+                                    <li class="menuTitle"><p>뷰티∙운동</p></li>
+                                    <li><a href="#">뷰티∙패션 레슨</a></li>
+                                    <li><a href="#">헬스∙PT 레슨</a></li>
+                                    <li><a href="#">요가∙필라테스 레슨</a></li>
+                                    <li><a href="#">스포츠∙액티비티 레슨</a></li>
+                                    <li><a href="#">골프 레슨</a></li>
+                                    <li><a href="#">게임 레슨</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>댄스∙뮤직</p></li>
+                                    <li><a href="#">댄스 레슨</a></li>
+                                    <li><a href="#">음악∙악기 레슨</a></li>
+                                    <li class="menuTitle"><p>미술∙글쓰기</p></li>
+                                    <li><a href="#">미술∙드로잉 레슨</a></li>
+                                    <li><a href="#">글쓰기 레슨</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>공예∙취미</p></li>
+                                    <li><a href="#">공예∙DIY 레슨</a></li>
+                                    <li><a href="#">타로∙사주 레슨</a></li>
+                                    <li><a href="#">연기 레슨</a></li>
+                                    <li><a href="#">기타 취미 레슨</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>전자책∙VOD</p></li>
+                                    <li><a href="#">라이프 VOD</a></li>
+                                    <li><a href="#">라이프 전자책</a></li>
+                                    <li><a href="#">취미자료</a></li>
+                                </ul>
+                                <a href="#"><img src="./img/J2z0p_curated_content_item_directory_banner_desktop_827.webp" alt="크몽X토스 첫결제 혜택 바로가기"></a>
+                            </div>
+                        </div>
+                        <div class="subMenu-area" id="board16">
+                            <div class="subMenu-box">
+                                <ul>
+                                    <li class="menuTitle"><p>웨딩</p></li>
+                                    <li><a href="#">웨딩 디렉터</a></li>
+                                    <li><a href="#">스튜디오∙스냅∙보정</a></li>
+                                    <li><a href="#">본식 사진∙영상</a></li>
+                                    <li><a href="#">식전∙식중∙프로포즈 영상</a></li>
+                                    <li><a href="#">사회</a></li>
+                                    <li><a href="#">축가∙댄스∙반주∙음향</a></li>
+                                    <li><a href="#">청첩장∙식권∙현수막</a></li>
+                                    <li><a href="#">꽃 장식∙부케</a></li>
+                                    <li><a href="#">스드메 패키지</a></li>
+                                    <li><a href="#">한복∙예복∙웨딩밴드</a></li>
+                                    <li><a href="#">혼인서약서∙사뢰대본</a></li>
+                                    <li><a href="#">웨딩 기타</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>청소∙수리∙설치</p></li>
+                                    <li><a href="#">정리정돈 컨설팅</a></li>
+                                    <li><a href="#">이사∙입주 청소</a></li>
+                                    <li><a href="#">에어컨 청소∙수리∙설치</a></li>
+                                    <li><a href="#">세탁기 청소∙수리∙설치</a></li>
+                                    <li><a href="#">기타 가전 청소∙수리∙설치</a></li>
+                                    <li><a href="#">전문 방역</a></li>
+                                    <li><a href="#">전문 기타 청소∙수리∙설치</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="menuTitle"><p>기타</p></li>
+                                    <li><a href="#">반려동물</a></li>
+                                    <li><a href="#">공간</a></li>
+                                    <li><a href="#">공간</a></li>
+                                </ul>
+                                <a href="#"><img src="./img/5WaoN_curated_content_item_directory_banner_desktop_960.webp" alt="뻔한 결혹식이 싫다면? 바로가기"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>Prime <div class="li-bar"></div></span>
+                            </a>
+                            <span class="li-plus01">Top 2% 전문가의 서비스를 만나보세요.</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>엔터프라이즈<div class="li-bar"></div></span>
+                            </a>
+                            <span class="li-plus02">기업 외주 ∙ 상주 ∙ 정부지원사업 전용 솔루션입니다.</span>
+                            
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>전자책∙VOD<div class="li-bar"></div></span>
+                            </a>
+                            <span class="li-plus03">세상 모든 노하우를 배울 수 있는 곳</span>
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div class="commition">
+                    <a href="#">원하는 서비스를 못 찾겠다면,<b>프로젝트 의뢰</b>하세요! &nbsp; &gt;</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main"></main>
+    <footer id="footer"></footer>
+</body>
+</html>
