@@ -49,11 +49,12 @@ button, input {
   color: #303441;
 }
 #header .container .header-top {
+  margin: 0 16px;
   height: 74px;
   display: flex;
   align-items: center;
 }
-#header .container .header-top > a {
+#header .container .header-top h1 {
   width: 85px;
   height: 26px;
 }
@@ -71,6 +72,7 @@ button, input {
   padding: 0 12px;
   font-size: 14px;
   border-radius: 20px;
+  margin: 0 16px;
 }
 #header .container .header-top form input {
   width: 100%;
@@ -193,6 +195,7 @@ button, input {
   box-shadow: rgba(0, 0, 0, 0.07) 0px 5px 11px 0px;
 }
 #header .container .header-bottom .menu .menuWrap .menu-area {
+  display: none;
   background-color: #fafafc;
   height: 100%;
   width: 185px;
@@ -348,4 +351,27 @@ button, input {
 }
 #header .container .header-bottom .commition:hover {
   text-decoration: underline;
+}
+
+#section1 {
+  display: block;
+  width: 100%;
+  height: 380px;
+  padding: 50px 0;
+}
+#section1 .container {
+  height: 100%;
+}
+#section1 .container .mainSlide {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+}
+#section1 .container .mainSlide .slideTxt {
+  background: yellow;
+}
+#section1 .container .mainSlide .slideImg {
+  background: peru;
 }/*# sourceMappingURL=style.css.map */
