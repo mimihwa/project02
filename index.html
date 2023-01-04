@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/reponsive.css">
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="./js/typed.js"></script>
     <script src="./js/script.js" defer></script>
 
 
@@ -71,6 +72,35 @@
                 </div>
             </div>
             <div class="header-bottom">
+                <div class="mobile-menu">
+                    <div class="mobileMenu mobileMenu1">
+                        <ul>
+                            <li class="menuTitle"><p>비즈니스</p></li>
+                            <li><a href="#" data-board="#board01">디자인</a></li>
+                            <li><a href="#" data-board="#board02">IT∙프로그래밍</a></li>
+                            <li><a href="#" data-board="#board03">영상∙사진∙음향</a></li>
+                            <li><a href="#" data-board="#board04">마케팅</a></li>
+                            <li><a href="#" data-board="#board05">번역∙통역</a></li>
+                            <li><a href="#" data-board="#board06">문서∙글쓰기</a></li>
+                            <li><a href="#" data-board="#board07">경영지문∙운영지원</a></li>
+                            <li><a href="#" data-board="#board08">주문제작</a></li>
+                            <li><a href="#" data-board="#board09">세무∙법무∙노무</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobileMenu mobileMenu2">
+                        <ul>
+                            <li class="menuTitle"><p>N잡∙커리어</p></li>
+                            <li><a href="#" data-board="#board10">취업∙입시</a></li>
+                            <li><a href="#" data-board="#board11">투잡∙노하우</a></li>
+                            <li><a href="#" data-board="#board12">직무역량</a></li>
+                            <li class="menuTitle"><p>취미∙생활</p></li>
+                            <li><a href="#" data-board="#board13">운세</a></li>
+                            <li><a href="#" data-board="#board14">심리상담</a></li>
+                            <li><a href="#" data-board="#board15">취미</a></li>
+                            <li><a href="#" data-board="#board16">생활서비스</a></li> 
+                        </ul>
+                    </div>
+                </div>
                 <div class="menu">
                     <button type="button" class="menuButton">
                         <span role="img" rotate="0" class="menuBar"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" class="css-7kp13n e181xm9y0"><path xmlns="http://www.w3.org/2000/svg" d="M19,17 C19.5522847,17 20,17.4477153 20,18 C20,18.5522847 19.5522847,19 19,19 L5,19 C4.44771525,19 4,18.5522847 4,18 C4,17.4477153 4.44771525,17 5,17 L19,17 Z M19,11 C19.5522847,11 20,11.4477153 20,12 C20,12.5522847 19.5522847,13 19,13 L5,13 C4.44771525,13 4,12.5522847 4,12 C4,11.4477153 4.44771525,11 5,11 L19,11 Z M19,5 C19.5522847,5 20,5.44771525 20,6 C20,6.55228475 19.5522847,7 19,7 L5,7 C4.44771525,7 4,6.55228475 4,6 C4,5.44771525 4.44771525,5 5,5 L19,5 Z"></path></svg></span>
@@ -79,33 +109,6 @@
                         <div class="menuButton-bar"></div>
                     </button>
                     <div class="menuWrap">
-                        <div class="mobile-menu">
-                            <div class="mobileMenu mobileMenu1">
-                                <ul>
-                                    <li class="menuTitle"><p>비즈니스</p></li>
-                                    <li><a href="#" data-board="#board01">디자인</a></li>
-                                    <li><a href="#" data-board="#board02">IT∙프로그래밍</a></li>
-                                    <li><a href="#" data-board="#board03">영상∙사진∙음향</a></li>
-                                    <li><a href="#" data-board="#board04">마케팅</a></li>
-                                    <li><a href="#" data-board="#board05">번역∙통역</a></li>
-                                    <li><a href="#" data-board="#board06">문서∙글쓰기</a></li>
-                                    <li><a href="#" data-board="#board07">경영지문∙운영지원</a></li>
-                                    <li><a href="#" data-board="#board08">주문제작</a></li>
-                                    <li><a href="#" data-board="#board09">세무∙법무∙노무</a></li>
-                                </ul>
-                            </div>
-                            <div class="mobileMenu mobileMenu2">
-                                <li class="menuTitle"><p>N잡∙커리어</p></li>
-                                <li><a href="#" data-board="#board10">취업∙입시</a></li>
-                                <li><a href="#" data-board="#board11">투잡∙노하우</a></li>
-                                <li><a href="#" data-board="#board12">직무역량</a></li>
-                                <li class="menuTitle"><p>취미∙생활</p></li>
-                                <li><a href="#" data-board="#board13">운세</a></li>
-                                <li><a href="#" data-board="#board14">심리상담</a></li>
-                                <li><a href="#" data-board="#board15">취미</a></li>
-                                <li><a href="#" data-board="#board16">생활서비스</a></li> 
-                            </div>
-                        </div>
                         <div class="menu-area">
                             <ul>
                                 <li class="menuTitle"><p>비즈니스</p></li>
@@ -766,21 +769,40 @@
                 <div class="commition">
                     <a href="#">원하는 서비스를 못 찾겠다면,<b>프로젝트 의뢰</b>하세요! &nbsp; &gt;</a>
                 </div>
+                <span class="mobile-appBar-wrap">
+                    <a href="javascript:" class="appbarCloseBt" title="appbarBt">
+                       <i class="appbar-line appbar-line1"></i>
+                       <i class="appbar-line appbar-line2"></i>
+                    </a>
+                 </span>
             </div>
         </div>
     </header>
-    <!-- <div id="section1" class="section1">
+    <div id="section1" class="section1">
         <div class="container">
-            <div class="mainSlide">
-                <div class="slideTxt">
-                    <h2>
-                        프리랜서 마켓 No.1 크몽에서 <br> 원하는 전문가를 찾아보세요!
-                    </h2>
+            <div class="slideTxt">
+                <h2>
+                    프리랜서 마켓 No.1 크몽에서 <br> 원하는 전문가를 찾아보세요!
+                </h2>
+                <div class="autoText">
+                    <span id="typed"></span>
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" class="css-7kp13n e181xm9y0"><path xmlns="http://www.w3.org/2000/svg" d="M11.2307008,3.5 C15.5002489,3.5 18.9614015,6.96828437 18.9614015,11.24663 C18.9614015,13.0978372 18.3133954,14.7973826 17.2322825,16.1299241 L20.2742127,19.178378 C20.5762688,19.4810023 20.5764739,19.9714482 20.2746708,20.2738195 C19.9728678,20.5761908 19.4833433,20.5759857 19.1812873,20.2733614 L19.1812873,20.2733614 L16.1426973,17.2288066 C14.8071694,18.3312107 13.0960911,18.9932599 11.2307008,18.9932599 C6.96115262,18.9932599 3.5,15.5249756 3.5,11.24663 C3.5,6.96828437 6.96115262,3.5 11.2307008,3.5 Z M11.2307008,5.04932599 C7.81506225,5.04932599 5.04614015,7.82395349 5.04614015,11.24663 C5.04614015,14.6693064 7.81506225,17.4439339 11.2307008,17.4439339 C14.6463393,17.4439339 17.4152614,14.6693064 17.4152614,11.24663 C17.4152614,7.82395349 14.6463393,5.04932599 11.2307008,5.04932599 Z"></path></svg>
                 </div>
-                <div class="slideImg"></div>
+                <div class="tagText">
+                    <a href="javascript:;">#로고</a>
+                    <a href="javascript:;">#블로그</a>
+                    <a href="javascript:;">#상세페이지</a>
+                    <a href="javascript:;">#명함</a>
+                    <a href="javascript:;">#일러스트</a>
+                </div>
+            </div>
+            <div class="slideImg">
+                <button class="prev"></button>
+                <div class="slideList"></div>
+                <button class="next"></button>
             </div>
         </div>
-    </div> -->
+    </div>
     <footer id="footer"></footer>
 </body>
 </html>

@@ -152,6 +152,37 @@ button, input {
   justify-content: space-between;
   align-items: center;
 }
+#header .container .header-bottom .mobile-menu {
+  width: 100%;
+  height: 500px;
+  background: #fff;
+  position: fixed;
+  top: 122px;
+  left: -100%;
+  z-index: 3;
+  display: flex;
+}
+#header .container .header-bottom .mobile-menu .mobileMenu {
+  width: 50%;
+  padding: 20px 0;
+}
+#header .container .header-bottom .mobile-menu .mobileMenu ul li {
+  margin: 5px 0;
+  text-align: center;
+}
+#header .container .header-bottom .mobile-menu .mobileMenu ul li p {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+#header .container .header-bottom .mobile-menu .mobileMenu ul li a {
+  display: block;
+  padding: 10px 5px;
+  font-size: 14px;
+}
+#header .container .header-bottom .mobile-menu .mobileMenu ul li:hover:not(.menuTitle) {
+  background: rgb(255, 212, 0);
+}
 #header .container .header-bottom .menu {
   display: flex;
   position: relative;
@@ -367,26 +398,117 @@ button, input {
 #header .container .header-bottom .commition:hover {
   text-decoration: underline;
 }
-
-#section1 {
+#header .container .header-bottom .mobile-appBar-wrap {
+  display: none;
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+#header .container .header-bottom .mobile-appBar-wrap a {
+  opacity: 0;
   display: block;
   width: 100%;
-  height: 380px;
+  height: 100%;
+}
+#header .container .header-bottom .mobile-appBar-wrap a i {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #303441;
+  top: 50%;
+  margin-top: -1px;
+}
+#header .container .header-bottom .mobile-appBar-wrap a i.appbar-line1 {
+  transform: rotate(45deg);
+}
+#header .container .header-bottom .mobile-appBar-wrap a i.appbar-line2 {
+  transform: rotate(-45deg);
+}
+
+#section1 {
+  background: yellow;
+  display: block;
+  width: 100%;
+  height: 480px;
   padding: 50px 0;
 }
 #section1 .container {
   height: 100%;
-}
-#section1 .container .mainSlide {
   width: 100%;
   height: 100%;
   display: grid;
   grid-gap: 40px;
   grid-template-columns: 1fr 1fr;
 }
-#section1 .container .mainSlide .slideTxt {
-  background: yellow;
+#section1 .container .slideTxt {
+  background: green;
+  grid-gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
-#section1 .container .mainSlide .slideImg {
+#section1 .container .slideTxt h2 {
+  margin-top: 54px;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: normal;
+}
+#section1 .container .slideTxt .autoText {
+  border: 2px solid #fff;
+  background-color: transparent;
+  width: 88%;
+  height: 60px;
+  background: rebeccapurple;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#section1 .container .slideTxt .autoText #typed {
+  opacity: 0.8;
+  color: #fff;
+  font-size: 20px;
+}
+#section1 .container .slideTxt .autoText .typed-cursor {
+  opacity: 0.8;
+  line-height: 28px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  margin-left: 2px;
+  -webkit-animation: blink-effect 0.7s infinite;
+          animation: blink-effect 0.7s infinite;
+}
+#section1 .container .slideTxt .autoText svg {
+  color: #fff;
+  position: absolute;
+  right: 18px;
+}
+#section1 .container .slideTxt .tagText {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 8px;
+}
+#section1 .container .slideTxt .tagText a {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 4px 8px;
+  font-size: 13px;
+  border-radius: 16px;
+  color: #fff;
+}
+#section1 .container .slideImg {
+  width: 100%;
   background: peru;
+}
+
+@-webkit-keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

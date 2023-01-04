@@ -10,7 +10,6 @@ $('.menuWrap').each(function(){
     lastPanel=$(lastAnchor.attr('data-board'));
     PanelDiv.removeClass('on');
     $('.menu-area').hide();
-
     $('.menuButton, menuButton-bar, .menu-area, .subMenu-area').hover(function(){
         $('.menu-area').show();
     }, function(){
@@ -40,9 +39,42 @@ $('.menuWrap').each(function(){
         $(this).find('svg').css('opacity','0');
     });
     tabDiv.mouseleave(function(){
-        PanelDiv.removeClass('on');
-        
+        PanelDiv.removeClass('on');  
     });
-  
 }); 
 
+//모바일 메뉴
+$(window).resize(function(){
+    $('.mobile-menu').each(function(){
+        let menu=$(this);
+        let Btn=$('.menuButton');
+        let close=$('.appbarCloseBt');
+        let windowWidth=$( window ).width()
+    
+        Btn.click(function(e){
+            e.preventdefault;
+            if(windowWidth < 850){
+                menu.stop().animate({left:0},500);
+                close.stop().animate({opacity:1},500);
+            }else{
+                menu.stop().animate({left:'-100%'},500);
+                close.stop().animate({opacity:0},500);
+            };
+        });
+        close.click(function(e){
+            e.preventdefault;
+            $('.mobile-menu').stop().animate({left:'-100%'},500);
+            close.stop().animate({opacity:0},500);
+        });
+    });
+});
+
+//section1(자동텍스트)
+$('#typed').typed({
+    strings:["심리상담","쇼핑몰","전자책","홈페이지","VOD"],
+    typeSpeed:50,
+    backSpeed:50,
+    backDelay:1000,
+    loop:true,
+    showCursor: true,
+});

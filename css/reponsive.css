@@ -20,7 +20,7 @@
 }
 
 @media screen and (max-width: 850px){
-    
+    #header .container .header-bottom .mobile-appBar-wrap{display: block;}
 
 }
 
