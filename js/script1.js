@@ -11,7 +11,7 @@ PanelDiv.removeClass('on');
 $('.menu-area').hide();
 
 if(window.innerWidth > 850){
-    $('.menu').hover(function(){
+    $('.menuButton, menuButton-bar, .menu-area, .subMenu-area').hover(function(){
         $('.menu-area').show();
     }, function(){
         $('.menu-area').hide();
@@ -61,7 +61,7 @@ Btn.click(function(e){
 });
 close.click(function(e){
     e.preventdefault;
-    menu.stop().animate({left:'-100%'},500);
+    $('.mobile-menu').stop().animate({left:'-100%'},500);
     close.stop().animate({opacity:0},500);
 });
 
@@ -70,13 +70,13 @@ $(window).resize(function(){
     console.log(window.innerWidth)
 
     if(window.innerWidth > 850){
-        $('.menu').hover(function(){
+        $('.menuButton, menuButton-bar, .menu-area, .subMenu-area').hover(function(){
             $('.menu-area').show();
         }, function(){
             $('.menu-area').hide();
         }); 
     }else{
-        $('.menu').hover(function(){
+        $('.menuButton, menuButton-bar, .menu-area, .subMenu-area').hover(function(){
             $('.menu-area').hide();
         }, function(){
             $('.menu-area').hide();
@@ -85,12 +85,4 @@ $(window).resize(function(){
 })
     
 
-//section1(자동텍스트)
-$('#typed').typed({
-    strings:["심리상담","쇼핑몰","전자책","홈페이지","VOD"],
-    typeSpeed:50,
-    backSpeed:50,
-    backDelay:1000,
-    loop:true,
-    showCursor: true,
-});
+
