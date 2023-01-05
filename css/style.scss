@@ -431,6 +431,7 @@ button, input{border: none; outline: none;}
         }
         .slideImg{
             max-width: 540px;
+            max-height: 380px;
             background: peru;
             position: relative;
             .slideList{
@@ -440,25 +441,30 @@ button, input{border: none; outline: none;}
                 position: relative;
                 /* overflow: hidden; */
                .slideTrack{
-                width: 100%;
+                width: 11340px;
                 height: 100%;
                 opacity: 1;
                 position: relative;
+                display: flex;
 
-                li{
-                    max-width: 540px;
-                    max-height: 380px;
-                    display: inline-block;
-                    a{
-                        width: 100%;
-                        height: 100%;
-                        
-                        img{
+                    li{
+                        max-width: 540px;
+                        max-height: 380px;
+                        display: inline-block;
+                        a{
+                            width: 100%;
+                            height: 100%;
                             
+                            img{
+                                max-width: 540px;
+                                
+                            }
                         }
                     }
-                }
                } 
+            }
+            .slideNum{
+
             }
             button{
                 cursor: pointer;
@@ -485,7 +491,6 @@ button, input{border: none; outline: none;}
                     margin-left: 1px;
                 }
             }
-            
             .next{
                 right: -15px;
             }

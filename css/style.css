@@ -502,6 +502,7 @@ button, input {
 }
 #section1 .container .slideImg {
   max-width: 540px;
+  max-height: 380px;
   background: peru;
   position: relative;
 }
@@ -513,10 +514,11 @@ button, input {
   /* overflow: hidden; */
 }
 #section1 .container .slideImg .slideList .slideTrack {
-  width: 100%;
+  width: 11340px;
   height: 100%;
   opacity: 1;
   position: relative;
+  display: flex;
 }
 #section1 .container .slideImg .slideList .slideTrack li {
   max-width: 540px;
@@ -526,6 +528,9 @@ button, input {
 #section1 .container .slideImg .slideList .slideTrack li a {
   width: 100%;
   height: 100%;
+}
+#section1 .container .slideImg .slideList .slideTrack li a img {
+  max-width: 540px;
 }
 #section1 .container .slideImg button {
   cursor: pointer;
