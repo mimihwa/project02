@@ -429,43 +429,37 @@ button, input{border: none; outline: none;}
                 }
             }
         }
-        .slideImg{
+        .swiper {
+            width: 100%;
+            height: 100%;
             max-width: 540px;
             max-height: 380px;
-            background: peru;
+            border-radius: 4px;
             position: relative;
-            .slideList{
-                height: 380px;
-                border-radius: 4px;
-                display: block;
-                position: relative;
-                /* overflow: hidden; */
-               .slideTrack{
-                width: 11340px;
+            .swiper-slide{
+                width: 100%;
                 height: 100%;
-                opacity: 1;
-                position: relative;
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
                 display: flex;
-
-                    li{
-                        max-width: 540px;
-                        max-height: 380px;
-                        display: inline-block;
-                        a{
-                            width: 100%;
-                            height: 100%;
-                            
-                            img{
-                                max-width: 540px;
-                                
-                            }
-                        }
-                    }
-               } 
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+                background-size: cover !important;
+                background-position: center center !important;
             }
-            .slideNum{
-
-            }
+        
+        }
             button{
                 cursor: pointer;
                 position: absolute;
@@ -483,7 +477,7 @@ button, input{border: none; outline: none;}
                     vertical-align: -0.2em;
                 }
                 &:hover{background-color:$white}
-
+            
             }
             .prev{
                 left: -16px;
@@ -495,14 +489,31 @@ button, input{border: none; outline: none;}
                 right: -15px;
             }
 
-            
-        }
         
     }
-}
+}  
 
 @keyframes blink-effect {
     50% {
       opacity: 0;
     }
   };
+
+
+  html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      
+  

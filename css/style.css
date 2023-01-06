@@ -500,39 +500,28 @@ button, input {
   border-radius: 16px;
   color: #fff;
 }
-#section1 .container .slideImg {
-  max-width: 540px;
-  max-height: 380px;
-  background: peru;
-  position: relative;
-}
-#section1 .container .slideImg .slideList {
-  height: 380px;
-  border-radius: 4px;
-  display: block;
-  position: relative;
-  /* overflow: hidden; */
-}
-#section1 .container .slideImg .slideList .slideTrack {
-  width: 11340px;
-  height: 100%;
-  opacity: 1;
-  position: relative;
-  display: flex;
-}
-#section1 .container .slideImg .slideList .slideTrack li {
-  max-width: 540px;
-  max-height: 380px;
-  display: inline-block;
-}
-#section1 .container .slideImg .slideList .slideTrack li a {
+#section1 .container .swiper {
   width: 100%;
   height: 100%;
-}
-#section1 .container .slideImg .slideList .slideTrack li a img {
   max-width: 540px;
+  max-height: 380px;
+  border-radius: 4px;
+  position: relative;
 }
-#section1 .container .slideImg button {
+#section1 .container .swiper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+#section1 .container button {
   cursor: pointer;
   position: absolute;
   text-align: center;
@@ -545,20 +534,20 @@ button, input {
   transition: color 0.3s, background-color 0.3s, opacity 0.3s, transform 0.3s;
   box-shadow: 0px 0px 0px 1px transparent, 0px 0px 0px 4px transparent, 0px 2px 4px rgba(0, 0, 0, 0.18);
 }
-#section1 .container .slideImg button svg {
+#section1 .container button svg {
   display: inline-block;
   vertical-align: -0.2em;
 }
-#section1 .container .slideImg button:hover {
+#section1 .container button:hover {
   background-color: #fff;
 }
-#section1 .container .slideImg .prev {
+#section1 .container .prev {
   left: -16px;
 }
-#section1 .container .slideImg .prev svg {
+#section1 .container .prev svg {
   margin-left: 1px;
 }
-#section1 .container .slideImg .next {
+#section1 .container .next {
   right: -15px;
 }
 
@@ -572,4 +561,18 @@ button, input {
   50% {
     opacity: 0;
   }
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0 ; padding: 0;}
+        header{width: 100%; height: 100px; background: yellow;}
+        #main{width: 100%; height: 800px; background: green;position: relative;}
+        .content{position: relative; width: 100%; height: 100%; overflow: hidden;}
+        .content img{position: absolute; width: 100%;  top: 0; left: 0}
+        #footer{width: 100%; height: 200px; background: #000;}
+    </style>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header></header>
+        <main id="main">
+            <div class="content">
+                <img src="./templt_channel_img07.jpg" alt="">
+                <img src="./templt_channel_img08.jpg" alt="">
+            </div>
+        </main>
+        <footer id="footer"></footer>
+    </div>
+
+    <script>
+        $(window).resize(function(){
+            var boxWidth = $('img').width();
+            console.log(boxWidth)
+            if(boxWidth < 1920){
+                $('#main').height(boxWidth*0.56);
+            }
+            });
+    </script>
+</body>
+</html>

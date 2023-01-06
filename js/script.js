@@ -96,7 +96,7 @@ $('#typed').typed({
 });
 
 //section1(슬라이드)
-/* var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",
@@ -105,4 +105,6 @@ $('#typed').typed({
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-  }); */
+  });
+
+  $('.swiper-wrapper>.slide1').css("background-image","url(./img/slideImg1.jpeg)");
