@@ -67,8 +67,6 @@ close.click(function(e){
 
 
 $(window).resize(function(){
-    console.log(window.innerWidth)
-
     if(window.innerWidth > 850){
         $('.menu').hover(function(){
             $('.menu-area').show();
@@ -84,7 +82,6 @@ $(window).resize(function(){
     }
 })
     
-
 //section1(자동텍스트)
 $('#typed').typed({
     strings:["심리상담","쇼핑몰","전자책","홈페이지","VOD"],
@@ -97,6 +94,7 @@ $('#typed').typed({
 
 //section1(슬라이드)
 var swiper = new Swiper(".mySwiper", {
+    speed : 1000,
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",
@@ -116,9 +114,25 @@ var swiper = new Swiper(".mySwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-  });
+    autoplay: {     //자동슬라이드 (false-비활성화)
+        delay: 3000, // 시간 설정
+        disableOnInteraction: false, // false-스와이프 후 자동 재생
+    },
+    on: {
+        slideChange : function() {
+            //이벤트 또는 조건문으로 이용하면 된다.
+            let getColor = $('.swiper-slide').attr('data-color');
+            $('#section1').css('background-color','getColor');
+            console.log(getColor);
+        }
+    },
+    
+});
 
-  $(window).resize(function(){
+
+
+
+$(window).resize(function(){
     var boxWidth = $('.swiper .swiper-wrapper .swiper-slide').width();
     if(boxWidth < 540){
         $('.swiper').height(boxWidth*0.7);
@@ -136,4 +150,4 @@ var swiper = new Swiper(".mySwiper", {
     }
     });
 
-  
+
