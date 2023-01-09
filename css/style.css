@@ -7,7 +7,8 @@
 .container {
   max-width: 1200px;
   height: inherit;
-  margin: 0 auto; /* background: rgba(0, 0, 0, .3); */
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.3);
   padding: 0 16px;
 }
 
@@ -38,7 +39,7 @@ button, input {
 }
 
 #header {
-  z-index: 1;
+  z-index: 3;
   width: 100%;
   height: auto;
   position: -webkit-sticky;
@@ -430,15 +431,14 @@ button, input {
 }
 
 #section1 {
-  background: yellow;
   display: block;
   width: 100%;
-  height: 480px;
   padding: 50px 0;
 }
 #section1 .container {
+  position: relative;
   margin: 0 auto;
-  height: 100%;
+  height: inherit;
   width: 100%;
   height: 100%;
   display: grid;
@@ -446,29 +446,37 @@ button, input {
   grid-template-columns: 1fr 1fr;
 }
 #section1 .container .slideTxt {
-  background: green;
   grid-gap: 20px;
   display: flex;
   flex-direction: column;
 }
-#section1 .container .slideTxt h2 {
+#section1 .container .slideTxt .section-text {
   margin-top: 54px;
   color: #fff;
   font-size: 32px;
   font-weight: 500;
   line-height: normal;
 }
+#section1 .container .slideTxt .basicText {
+  display: block;
+}
+#section1 .container .slideTxt .reponseText {
+  display: none;
+  margin: 54px auto 0;
+  font-size: 26px;
+}
 #section1 .container .slideTxt .autoText {
   border: 2px solid #fff;
   background-color: transparent;
   width: 88%;
   height: 60px;
-  background: rebeccapurple;
+  background: transparent;
   position: relative;
   display: flex;
   align-items: center;
 }
 #section1 .container .slideTxt .autoText #typed {
+  padding-left: 12px;
   opacity: 0.8;
   color: #fff;
   font-size: 20px;
@@ -479,7 +487,7 @@ button, input {
   color: #fff;
   font-size: 17px;
   font-weight: 500;
-  margin-left: 2px;
+  margin: 0 0 1px 2px;
   -webkit-animation: blink-effect 0.7s infinite;
           animation: blink-effect 0.7s infinite;
 }
@@ -501,6 +509,8 @@ button, input {
   color: #fff;
 }
 #section1 .container .swiper {
+  margin-top: auto;
+  margin-bottom: auto;
   width: 100%;
   height: 100%;
   max-width: 540px;
@@ -521,34 +531,62 @@ button, input {
   background-size: cover !important;
   background-position: center center !important;
 }
-#section1 .container button {
+#section1 .container .swiper .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 67px;
+  height: 27px;
+  position: absolute;
+  grid-gap: 4px;
+  z-index: 2;
+  left: 84%;
+  bottom: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#section1 .container .swiper .swiper-pagination .swiper-pagination-total {
+  opacity: 0.6;
+}
+#section1 .container .button {
   cursor: pointer;
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 53%;
   width: 32px;
   height: 32px;
   color: #303441;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.75);
   transition: color 0.3s, background-color 0.3s, opacity 0.3s, transform 0.3s;
   box-shadow: 0px 0px 0px 1px transparent, 0px 0px 0px 4px transparent, 0px 2px 4px rgba(0, 0, 0, 0.18);
 }
-#section1 .container button svg {
+#section1 .container .button svg {
   display: inline-block;
   vertical-align: -0.2em;
 }
-#section1 .container button:hover {
+#section1 .container .button:hover {
   background-color: #fff;
 }
-#section1 .container .prev {
-  left: -16px;
+#section1 .container .swiper-button-prev:after, #section1 .container .swiper-button-next:after {
+  display: none !important;
 }
-#section1 .container .prev svg {
-  margin-left: 1px;
+#section1 .container .swiper-button-prev.swiper-button-disabled, #section1 .container .swiper-button-next.swiper-button-disabled {
+  opacity: 1;
+}
+#section1 .container .prev {
+  left: 51.2%;
 }
 #section1 .container .next {
-  right: -15px;
+  right: 1%;
+}
+
+#section2 {
+  width: 100%;
+  height: 400px;
+  background: yellow;
 }
 
 @-webkit-keyframes blink-effect {

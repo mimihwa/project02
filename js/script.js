@@ -100,6 +100,17 @@ var swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",
+      formatFractionCurrent: function (number) {
+        return ('0' + number).slice(-2);
+        },
+        formatFractionTotal: function (number) {
+            return ('0' + number).slice(-2);
+        },
+        renderFraction: function (currentClass, totalClass) {
+            return '<span class="' + currentClass + '"></span>' +
+                ' / ' +
+                '<span class="' + totalClass + '"></span>';
+        }
     },
     navigation: {
       nextEl: ".swiper-button-next",
@@ -107,4 +118,22 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
-  $('.swiper-wrapper>.slide1').css("background-image","url(./img/slideImg1.jpeg)");
+  $(window).resize(function(){
+    var boxWidth = $('.swiper .swiper-wrapper .swiper-slide').width();
+    if(boxWidth < 540){
+        $('.swiper').height(boxWidth*0.7);
+    }else{
+        $('.swiper').height(boxWidth*0.7);
+    }
+    if(window.innerWidth > 980){
+        $('#section1 .container').css('height','100%')
+    }else if(window.innerWidth < 980){
+        $('#section1 .container').height((boxWidth*0.7)+158.5);
+    }else if(window.innerWidth < 850){
+        $('#section1 .container').height((boxWidth*0.7)+150.5);
+    }else if(window.innerWidth < 700){
+        $('#section1 .container').height((boxWidth*0.7));
+    }
+    });
+
+  
