@@ -114,23 +114,30 @@ var swiper = new Swiper(".mySwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    autoplay: {     //자동슬라이드 (false-비활성화)
-        delay: 3000, // 시간 설정
-        disableOnInteraction: false, // false-스와이프 후 자동 재생
-    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false, 
+    },/* 
     on: {
         slideChange : function() {
-            //이벤트 또는 조건문으로 이용하면 된다.
-            let getColor = $('.swiper-slide').attr('data-color');
-            $('#section1').css('background-color','getColor');
+            let getColor = $('.swiper-slide').eq(this.realIndex).attr('data-color');
+            $('#section1').css('background-color', getColor);
             console.log(getColor);
         }
-    },
+    }, */
+    on: {
+        activeIndexChange : function() {
+            console.log(this.realIndex);
+            let getColors=['#1E44A6', 'rgb(212, 89, 83)', 'rgb(6, 27, 66)','rgb(253, 138, 156)','rgb(0, 102, 255)','rgb(8, 169, 75)','rgb(55, 17, 108)'];
+            let getColorsIdx=getColors[this.realIndex]
+            console.log(getColorsIdx);
+           
+             $('#section1').css('background', getColorsIdx);
+          
+        }
+    }
     
 });
-
-
-
 
 $(window).resize(function(){
     var boxWidth = $('.swiper .swiper-wrapper .swiper-slide').width();

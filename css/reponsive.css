@@ -3,8 +3,13 @@
 @media screen and (max-width: 1200px) {
     #header .header-bottom .menu .menuWrap .subMenu-area .subMenu-box>a{display: none;}
     .li-plus01,.li-plus02,.li-plus03{display: none;}
-    
-    
+
+    #section2 .container .section2-top-box ul{flex-wrap:wrap;}
+    #section2 .container .section2-top-box ul li{width: calc(100% / 6);}
+    #section2 .container .section2-box ul li a img{width: 55px; height: 55px;}
+    #section2 .container .section2-bottom-box1, #section2 .container .section2-bottom-box2{display: none;}
+    #section2 .container .section2-bottom-box3{display: flex; flex: 1 1 0%;}
+    #section2 .container .section2-bottom-box3 ul li{flex-basis: 14%;}
 }
 
 @media screen and (max-width: 980px){
@@ -34,6 +39,16 @@
 @media screen and (max-width: 850px){
     #header .container .header-bottom .mobile-appBar-wrap{display: block;}
     #section1 .container .slideTxt .reponseText{font-size: 20px;}
+
+    #section2 .container h3{font-size: 25px;margin: 0 auto;}
+    #section2 .container .section2-box{padding: 20px 24px 40px 24px;}
+    #section2 .container .section2-box h4{font-size: 18px; margin-bottom: -10px;}
+    #section2 .container .section2-box ul{flex-wrap:wrap; justify-content: space-around;}
+    #section2 .container .section2-top-box ul li{width: calc(100% / 4);}
+    #section2 .container .section2-box ul li a{padding: 12px 12px 0 12px;}
+    #section2 .container .section2-box ul li a img{width: 60px; height: 60px;}
+    #section2 .container .section2-box ul li a span{font-size: 18px;}
+    #section2 .container .section2-bottom-box3 ul li{width: calc(100% / 5); flex-basis: auto;}
 
 }
 

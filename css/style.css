@@ -7,7 +7,8 @@
 .container {
   max-width: 1200px;
   height: inherit;
-  margin: 0 auto; /* background: rgba(0, 0, 0, .3); */
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.3);
   padding: 0 16px;
 }
 
@@ -38,7 +39,7 @@ button, input {
 }
 
 #header {
-  z-index: 3;
+  z-index: 20;
   width: 100%;
   height: auto;
   position: -webkit-sticky;
@@ -437,6 +438,7 @@ button, input {
   transition: background-color 350ms ease-out 0s;
 }
 #section1 .container {
+  z-index: 1;
   padding: 50px 25px 50px 16px;
   position: relative;
   margin: 0 auto;
@@ -587,8 +589,75 @@ button, input {
 
 #section2 {
   width: 100%;
-  height: 400px;
-  background: yellow;
+  height: auto;
+  margin-bottom: 80px;
+}
+#section2 .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#section2 .container h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  color: #303441;
+}
+#section2 .container .section2-box {
+  padding: 20px 24px;
+  background-color: #fafafc;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: fit-content;
+  max-width: 100%;
+}
+#section2 .container .section2-box h4 {
+  font-size: 14px;
+  color: #212424;
+  font-weight: bold;
+}
+#section2 .container .section2-box ul {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  margin: 8px 0 0;
+}
+#section2 .container .section2-box ul li {
+  padding: 8px 0;
+  width: 108px;
+  height: 96px;
+  position: relative;
+}
+#section2 .container .section2-box ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 12px;
+}
+#section2 .container .section2-box ul li a img {
+  width: 48px;
+  height: 48px;
+  color: transparent;
+}
+#section2 .container .section2-box ul li a span {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #303441;
+  white-space: nowrap;
+}
+#section2 .container .section2-bottom-box2 {
+  flex: 1 1 0%;
+}
+#section2 .container .section2-bottom-box3 {
+  display: none;
+}
+
+#section3 {
+  width: 100%;
+  height: 800px;
+  background: rebeccapurple;
 }
 
 @-webkit-keyframes blink-effect {
