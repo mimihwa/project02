@@ -43,7 +43,6 @@ tabDiv.mouseleave(function(){
     PanelDiv.removeClass('on');  
 });
 
-
 //모바일 메뉴
 let menu=$('.mobile-menu');
 let Btn=$('.menuButton');
@@ -65,9 +64,6 @@ close.click(function(e){
     close.stop().animate({opacity:0},500);
 });
 
-
-
-    
 //section1(자동텍스트)
 $('#typed').typed({
     strings:["심리상담","쇼핑몰","전자책","홈페이지","VOD"],
@@ -124,11 +120,20 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
-window.onresize = function(){
-    document.location.reload();
-  };
+//swiper 재사용 함수
+function resizeSwiper(){
+    var boxWidth = $('.swiper .swiper-wrapper .swiper-slide').width();
+    if(boxWidth < 540){
+        $('.swiper').height(boxWidth*0.7);
+    }else{
+        $('.swiper').height(boxWidth*0.7);
+    }
+}
+
+resizeSwiper();
 
 $(window).resize(function(){
+    
     //모바일메뉴
     if(window.innerWidth > 850){
         $('.menu').hover(function(){
@@ -145,21 +150,7 @@ $(window).resize(function(){
     }
 
     //슬라이드
-    var boxWidth = $('.swiper .swiper-wrapper .swiper-slide').width();
-    if(boxWidth < 540){
-        $('.swiper').height(boxWidth*0.7);
-    }else{
-        $('.swiper').height(boxWidth*0.7);
-    }
-    if(window.innerWidth > 980){
-        $('#section1 .container').css('height','100%')
-    }else if(window.innerWidth < 980){
-        $('#section1 .container').height((boxWidth*0.7)+150.5);
-    }else if(window.innerWidth < 700){
-        $('#section1 .container').height((boxWidth*0.7));
-    }else if(window.innerWidth < 580){
-        $('#section1 .container').height((boxWidth*0.7));
-    };
+    resizeSwiper();
 
     //theme
     var themeWidth = $('#section3 ul .section3-theme').width();
@@ -169,5 +160,8 @@ $(window).resize(function(){
         $('#section3 ul .section3-theme').css('height','300px')
     }
 });
+
+
+
 
 

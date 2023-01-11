@@ -396,7 +396,7 @@ button, input{border: none; outline: none;}
             .reponseText{
                 display: none;
                 margin: 54px auto 0; 
-                font-size: 25px;
+                font-size: 26px;
             }
             .autoText{
                 border: 2px solid $white;
@@ -624,7 +624,6 @@ button, input{border: none; outline: none;}
     display: flex;
     flex-direction: column;
     background-color:rgb(242, 243, 247);
-    background: palegreen;
     .container{
         width: 100%;
         display: grid;
@@ -658,7 +657,39 @@ button, input{border: none; outline: none;}
                 }
             }
         }
-        .section4-bottom-box{}
+        .section4-bottom-box{
+            display: flex;
+            gap: 20px;
+            .article{
+                position: relative;
+                flex: 1 1 0%;
+                padding: 32px 40px;
+                background: $white;
+                border-radius: 8px;
+                box-shadow: rgb(48 52 65 / 5%) 0px 0px 20px 5px;
+                display: grid;
+                gap: 12px;
+                .article-number{
+                    display: flex;
+                    position: absolute;
+                    top: 20px;
+                    right: 32px;
+                    color: transparent;
+                    width: 28px;
+                    height: 28px;
+                }
+                h4{
+                    font-weight: bold;
+                    font-size: 18px;
+                    color: $black;
+                }
+                span{
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: $black;
+                }
+            }
+        }
     }
 }
 #section5{

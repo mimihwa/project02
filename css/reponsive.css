@@ -45,9 +45,9 @@
 
 @media screen and (max-width: 850px){
     #header .container .header-bottom .mobile-appBar-wrap{display: block;}
-    #section1 .container .slideTxt .reponseText{font-size: 19px;}
+    #section1 .container .slideTxt .reponseText{font-size: 20px;}
 
-    #section2 .container h3{font-size: 25px;margin: 0 auto;}
+    #section2 .container h3{font-size: 2px;margin: 0 auto;}
     #section2 .container .section2-box{padding: 20px 24px 40px 24px;}
     #section2 .container .section2-box h4{font-size: 18px; margin-bottom: -10px;}
     #section2 .container .section2-box ul{flex-wrap:wrap; justify-content: space-around;}
@@ -62,9 +62,9 @@
 
 @media screen and (max-width: 700px){
     #header .container .header-bottom .menu > ul{display: none;}
-    #section1 .container{padding: 0 85px;}
+    #section1 .container{padding:0 80px 50px 80px;}
     #section1 .container .slideTxt .autoText{display: none;}
-    #section1 .container .slideTxt .reponseText{font-size: 15px; margin-top: 40px; margin-bottom: 30px;}
+    #section1 .container .slideTxt .reponseText{font-size: 16.2px; margin-top: 40px; margin-bottom: 30px;}
     #section1 .container .button{top: 56%;}
     #section1 .container .swiper .swiper-pagination{left: 80%;}
     #section1 .container .next{right: 5%;}
@@ -75,7 +75,7 @@
 @media screen and (max-width: 580px){
     #header .container .header-bottom .menu > ul{display: none;}
 
-    #section1 .container{padding: 50px 100px;}
+    #section1 .container{padding: 50px 80px;}
     #section1 .container .slideTxt .reponseText{display: none;}
     #section1 .container .swiper .swiper-pagination{left: 78%; width: 55px; height: 23px; font-size: 11px;}
     #section1 .container .next{right: 6.5%;}
