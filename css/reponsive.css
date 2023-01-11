@@ -10,6 +10,10 @@
     #section2 .container .section2-bottom-box1, #section2 .container .section2-bottom-box2{display: none;}
     #section2 .container .section2-bottom-box3{display: flex; flex: 1 1 0%;}
     #section2 .container .section2-bottom-box3 ul li{flex-basis: 14%;}
+
+    #section3 ul{}
+    #section3 ul .section3-theme{height: 100px;}
+    #section3 ul .section3-theme a{background-position: top center;}
 }
 
 @media screen and (max-width: 980px){
@@ -34,11 +38,14 @@
     #section1 .container .button{top: 58%;}
     #section1 .container .next{right: 3%;}
     #section1 .container .prev{left: 3%;}
+
+    
+    
 }
 
 @media screen and (max-width: 850px){
     #header .container .header-bottom .mobile-appBar-wrap{display: block;}
-    #section1 .container .slideTxt .reponseText{font-size: 20px;}
+    #section1 .container .slideTxt .reponseText{font-size: 19px;}
 
     #section2 .container h3{font-size: 25px;margin: 0 auto;}
     #section2 .container .section2-box{padding: 20px 24px 40px 24px;}
@@ -50,22 +57,27 @@
     #section2 .container .section2-box ul li a span{font-size: 18px;}
     #section2 .container .section2-bottom-box3 ul li{width: calc(100% / 5); flex-basis: auto;}
 
+    #section3{display: none;}
 }
 
 @media screen and (max-width: 700px){
     #header .container .header-bottom .menu > ul{display: none;}
-    #section1 .container{padding: 0 100px;}
+    #section1 .container{padding: 0 85px;}
     #section1 .container .slideTxt .autoText{display: none;}
-    #section1 .container .slideTxt .reponseText{font-size: 14.5px; margin-top: 40px; margin-bottom: 30px;}
+    #section1 .container .slideTxt .reponseText{font-size: 15px; margin-top: 40px; margin-bottom: 30px;}
     #section1 .container .button{top: 56%;}
     #section1 .container .swiper .swiper-pagination{left: 80%;}
     #section1 .container .next{right: 5%;}
     #section1 .container .prev{left: 5%;}
+    #section2 .container h3{font-size: 22px;margin: 0 auto;}
 }
 
 @media screen and (max-width: 580px){
     #header .container .header-bottom .menu > ul{display: none;}
-    #section1 .container .swiper .swiper-pagination{left: 78%;}
+
+    #section1 .container{padding: 50px 100px;}
+    #section1 .container .slideTxt .reponseText{display: none;}
+    #section1 .container .swiper .swiper-pagination{left: 78%; width: 55px; height: 23px; font-size: 11px;}
     #section1 .container .next{right: 6.5%;}
     #section1 .container .prev{left: 6.5%;}
 }

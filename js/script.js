@@ -66,21 +66,7 @@ close.click(function(e){
 });
 
 
-$(window).resize(function(){
-    if(window.innerWidth > 850){
-        $('.menu').hover(function(){
-            $('.menu-area').show();
-        }, function(){
-            $('.menu-area').hide();
-        }); 
-    }else{
-        $('.menu').hover(function(){
-            $('.menu-area').hide();
-        }, function(){
-            $('.menu-area').hide();
-        });
-    }
-})
+
     
 //section1(자동텍스트)
 $('#typed').typed({
@@ -94,6 +80,8 @@ $('#typed').typed({
 
 //section1(슬라이드)
 var swiper = new Swiper(".mySwiper", {
+    observer: true,
+    observeParents: true,
     speed : 1000,
     pagination: {
       el: ".swiper-pagination",
@@ -127,19 +115,36 @@ var swiper = new Swiper(".mySwiper", {
     }, */
     on: {
         activeIndexChange : function() {
-            console.log(this.realIndex);
             let getColors=['#1E44A6', 'rgb(212, 89, 83)', 'rgb(6, 27, 66)','rgb(253, 138, 156)','rgb(0, 102, 255)','rgb(8, 169, 75)','rgb(55, 17, 108)'];
             let getColorsIdx=getColors[this.realIndex]
-            console.log(getColorsIdx);
            
              $('#section1').css('background', getColorsIdx);
           
         }
     }
-    
 });
 
+window.onresize = function(){
+    document.location.reload();
+  };
+
 $(window).resize(function(){
+    //모바일메뉴
+    if(window.innerWidth > 850){
+        $('.menu').hover(function(){
+            $('.menu-area').show();
+        }, function(){
+            $('.menu-area').hide();
+        }); 
+    }else{
+        $('.menu').hover(function(){
+            $('.menu-area').hide();
+        }, function(){
+            $('.menu-area').hide();
+        });
+    }
+
+    //슬라이드
     var boxWidth = $('.swiper .swiper-wrapper .swiper-slide').width();
     if(boxWidth < 540){
         $('.swiper').height(boxWidth*0.7);
@@ -149,12 +154,20 @@ $(window).resize(function(){
     if(window.innerWidth > 980){
         $('#section1 .container').css('height','100%')
     }else if(window.innerWidth < 980){
-        $('#section1 .container').height((boxWidth*0.7)+158.5);
-    }else if(window.innerWidth < 850){
         $('#section1 .container').height((boxWidth*0.7)+150.5);
     }else if(window.innerWidth < 700){
         $('#section1 .container').height((boxWidth*0.7));
+    }else if(window.innerWidth < 580){
+        $('#section1 .container').height((boxWidth*0.7));
+    };
+
+    //theme
+    var themeWidth = $('#section3 ul .section3-theme').width();
+    if(window.innerWidth < 1200){
+        $('#section3 ul .section3-theme').height((themeWidth*0.47));
+    }else{
+        $('#section3 ul .section3-theme').css('height','300px')
     }
-    });
+});
 
 

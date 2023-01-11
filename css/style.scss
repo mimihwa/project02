@@ -4,8 +4,10 @@
 $Yellow: rgb(255, 212, 0);
 $white: #fff;
 $black: #303441;
+$textBlack: #212224;
 
 *{box-sizing: border-box; font-family: 'Noto Sans KR', sans-serif;}
+.wrap{background: #fff;}
 .container{max-width: 1200px; height: inherit; margin: 0 auto; background: rgba(0, 0, 0, .3); padding: 0 16px;}
 button, input{border: none; outline: none;}
 
@@ -372,7 +374,6 @@ button, input{border: none; outline: none;}
         padding: 50px 25px 50px 16px;
         position: relative;
         margin: 0 auto;
-        height: inherit;
         width: 100%;
         height: 100%;
         display: grid;
@@ -395,7 +396,7 @@ button, input{border: none; outline: none;}
             .reponseText{
                 display: none;
                 margin: 54px auto 0; 
-                font-size: 26px;
+                font-size: 25px;
             }
             .autoText{
                 border: 2px solid $white;
@@ -444,7 +445,7 @@ button, input{border: none; outline: none;}
             margin-top: auto;
             margin-bottom: auto;
             width: 100%;
-            height: 100%;
+            height: 380px;
             max-width: 540px;
             max-height: 380px;
             border-radius: 4px;
@@ -591,8 +592,79 @@ button, input{border: none; outline: none;}
 } 
 #section3{
     width: 100%;
-    height: 800px;
-    background: rebeccapurple;
+    height: inherit;
+    margin-bottom: 80px;
+    h3{
+        font-size: 20px; 
+        color: $textBlack;
+        font-weight: 500;
+    }
+    ul{
+        margin-top: 24px;
+        display: flex;
+        gap: 20px;
+        .section3-theme{
+            position: relative;
+            width: calc(100%/5);
+            height: 300px;
+            a{
+                background-position: center center;
+                background-size: cover;
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+#section4{
+    width: 100%;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(242, 243, 247);
+    background: palegreen;
+    .container{
+        width: 100%;
+        display: grid;
+        gap: 40px;
+        .section4-top-box{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .section4-top-box-left{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                h3{
+                    color: $textBlack;
+                    font-size: 32px;
+                    font-weight: bold;
+                }
+                span{
+                    color: $textBlack;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+            .section4-top-box-right{
+                border-radius: 8px;
+                overflow: hidden;
+                height: 390px;
+                cursor: pointer;
+                iframe{
+
+                }
+            }
+        }
+        .section4-bottom-box{}
+    }
+}
+#section5{
+    width: 100%;
+    height: 500px;
+    background: salmon;
 }
 
 @keyframes blink-effect {
@@ -600,22 +672,5 @@ button, input{border: none; outline: none;}
       opacity: 0;
     }
   };
-
-
-  html,
-      body {
-        position: relative;
-        height: 100%;
-      }
-
-      body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-      }
-
-      
+     
   
