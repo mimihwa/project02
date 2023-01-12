@@ -128,9 +128,61 @@ function resizeSwiper(){
     }else{
         $('.swiper').height(boxWidth*0.7);
     }
-}
+};
 
+//section4-iframe 재사용 함수
+function resizeIframeS4(){
+    if(window.innerWidth < 980){
+        var containerWidth = $('#section4 .container').width();
+        const iframeWrap=$('#section4 .container .section4-top-box .section4-top-box-right');
+        const iframe=$('#section4 .container .section4-top-box .section4-top-box-right iframe');
+        
+        iframe.width(containerWidth*0.78);
+        iframeWrap.width(containerWidth*0.78);
+        iframe.height(containerWidth*0.5);
+        iframeWrap.height(containerWidth*0.5);
+         
+    }
+};
+
+
+//sectionBar 재사용 함수
+function sectionBar(){
+    if(window.innerWidth < 1200){
+        let barWidth = $('#sectionBar').width();
+        let barHeight = $('#sectionBar').height();
+        console.log(barWidth);
+
+        $('#sectionBar').height(barWidth*0.137);
+    }
+};
+
+//section5-iframe 재사용 함수
+function resizeIframeS5(){
+    if(window.innerWidth < 1200){
+        var containerWidth = $('#section5 .container').width();
+        const iframeWrap=$('#section5 .container .section5-videoWrap .videoTab');
+        const iframe=$('#section5 .container .section5-videoWrap .videoTab iframe');
+        
+        /* iframe.width(containerWidth*0.78);
+        iframeWrap.width(containerWidth*0.78);
+        iframe.height(containerWidth*0.5);
+        iframeWrap.height(containerWidth*0.5); */
+         
+    }
+};
+
+//유튜브 새창열림
+/* function youtubeOpen(url) {
+    const option=''
+    window.open(url);
+  } */
+
+
+sectionBar();
 resizeSwiper();
+resizeIframeS4();
+resizeIframeS5();
 
 $(window).resize(function(){
     
@@ -159,6 +211,16 @@ $(window).resize(function(){
     }else{
         $('#section3 ul .section3-theme').css('height','300px')
     }
+
+    //iframe(section4)
+    resizeIframeS4();
+
+    //sectionBar
+    sectionBar();
+    
+    //iframe(section4)
+    resizeIframeS5();
+
 });
 
 

@@ -11,9 +11,14 @@
     #section2 .container .section2-bottom-box3{display: flex; flex: 1 1 0%;}
     #section2 .container .section2-bottom-box3 ul li{flex-basis: 14%;}
 
-    #section3 ul{}
     #section3 ul .section3-theme{height: 100px;}
     #section3 ul .section3-theme a{background-position: top center;}
+
+    #section4 .container .section4-top-box {flex-direction: column;}
+    #section4 .container .section4-top-box .section4-top-box-left{display: none;}
+    #section4 .container .section4-top-box .section4-top-box-left-reponse{display: block;}
+    #section4 .container .section4-top-box .section4-top-box-right{margin-top: 20px;}
+    #section4 .container .section4-bottom-box .article span{font-size: 15px;}
 }
 
 @media screen and (max-width: 980px){
@@ -39,6 +44,13 @@
     #section1 .container .next{right: 3%;}
     #section1 .container .prev{left: 3%;}
 
+    #section4 .container .section4-bottom-box{width: 82%; margin: 0 auto;}
+    #section4 .container .section4-bottom-box .article{padding: 25px 20px;}
+    #section4 .container .section4-bottom-box .article .article-number{display: none;}
+    #section4 .container .section4-bottom-box .article h4{margin: 0 auto;}
+    #section4 .container .section4-bottom-box .article span{display: none;}
+
+
     
     
 }
@@ -47,7 +59,8 @@
     #header .container .header-bottom .mobile-appBar-wrap{display: block;}
     #section1 .container .slideTxt .reponseText{font-size: 20px;}
 
-    #section2 .container h3{font-size: 2px;margin: 0 auto;}
+    #section2{margin-bottom: 50px;}
+    #section2 .container h3{font-size: 28px;margin: 0 auto;}
     #section2 .container .section2-box{padding: 20px 24px 40px 24px;}
     #section2 .container .section2-box h4{font-size: 18px; margin-bottom: -10px;}
     #section2 .container .section2-box ul{flex-wrap:wrap; justify-content: space-around;}
@@ -58,6 +71,15 @@
     #section2 .container .section2-bottom-box3 ul li{width: calc(100% / 5); flex-basis: auto;}
 
     #section3{display: none;}
+    #section4{padding: 50px 0;}
+    #section4 .container .section4-top-box .section4-top-box-left-reponse h3{font-size: 30px;}
+    #section4 .container .section4-bottom-box .article{padding: 20px 20px;}
+    #section4 .container .section4-bottom-box{width: 82%; margin: 0 auto;}
+    #section4 .container .section4-bottom-box .article h4{font-size: 13.8px;}
+
+    #section5{padding: 50px 0;}
+
+
 }
 
 @media screen and (max-width: 700px){
@@ -70,6 +92,9 @@
     #section1 .container .next{right: 5%;}
     #section1 .container .prev{left: 5%;}
     #section2 .container h3{font-size: 22px;margin: 0 auto;}
+
+    #section4 .container .section4-top-box .section4-top-box-left-reponse h3{font-size: 25px;}
+    #section4 .container .section4-bottom-box{display: none;}
 }
 
 @media screen and (max-width: 580px){
@@ -80,4 +105,6 @@
     #section1 .container .swiper .swiper-pagination{left: 78%; width: 55px; height: 23px; font-size: 11px;}
     #section1 .container .next{right: 6.5%;}
     #section1 .container .prev{left: 6.5%;}
+
+    #section4 .container .section4-top-box .section4-top-box-left-reponse h3{font-size: 20px;}
 }
