@@ -787,14 +787,15 @@ button, input {
   flex-direction: column;
 }
 #section5 .container {
+  width: 100%;
   text-align: center;
 }
-#section5 .container > h3 {
+#section5 .container .section5-textWrap > h3 {
   color: #212224;
   font-size: 32px;
   font-weight: bold;
 }
-#section5 .container > span {
+#section5 .container .section5-textWrap > span {
   display: block;
   margin: 8px 0 0;
   color: #555969;
@@ -802,14 +803,10 @@ button, input {
   font-weight: 400;
 }
 #section5 .container .section5-videoWrap {
+  width: 100%;
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
   margin-top: 40px;
-}
-#section5 .container .section5-videoWrap .videoTab {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 0%;
 }
 #section5 .container .section5-videoWrap .videoTab iframe {
   border-radius: 8px;
@@ -828,7 +825,134 @@ button, input {
   color: #555969;
   font-weight: 400;
 }
+#section5 .container .section5-videoWrap-resize {
+  position: relative;
+  margin: 20px auto 0;
+  width: 80%;
+  display: none;
+}
+#section5 .container .section5-videoWrap-resize .slider-wrap .slick-list .slick-track .slick-slide iframe {
+  border-radius: 10px;
+}
+#section5 .container .section5-videoWrap-resize > .button {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  width: 32px;
+  height: 32px;
+  color: #303441;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 0px 0px 1px transparent, 0px 0px 0px 4px transparent, 0px 2px 4px rgba(0, 0, 0, 0.18);
+}
+#section5 .container .section5-videoWrap-resize > .button svg {
+  display: inline-block;
+  vertical-align: -0.2em;
+}
+#section5 .container .section5-videoWrap-resize > .button:hover {
+  background-color: #fff;
+}
+#section5 .container .section5-videoWrap-resize .prev {
+  left: 2%;
+}
+#section5 .container .section5-videoWrap-resize .next {
+  right: 2%;
+}
+
 #section6 {
+  width: 100%;
+  background: #fff;
+  padding: 80px 0;
+}
+#section6 .container .section6-top a img {
+  width: 100%;
+  height: 100%;
+}
+#section6 .container .section6-middle {
+  margin: 80px 0;
+}
+#section6 .container .section6-middle > h4 {
+  font-size: 20px;
+  color: #212224;
+  font-weight: 500;
+}
+#section6 .container .section6-middle > span {
+  margin-top: 12px;
+  color: #555969;
+  font-size: 16px;
+  font-weight: 400;
+}
+#section6 .container .section6-middle .section6-middle-wrap {
+  margin-top: 24px;
+  display: flex;
+  gap: 24px;
+}
+#section6 .container .section6-middle .section6-middle-wrap .rankWrap {
+  flex-basis: 33.333%;
+}
+#section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankTop {
+  margin-bottom: 16px;
+  box-shadow: rgba(48, 52, 65, 0.08) 0px 5px 23px -2px;
+  border-radius: 8px;
+  border: 1px solid rgb(255, 212, 0);
+}
+#section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankTop .rankTitle {
+  background: rgb(255, 212, 0);
+  text-align: center;
+  padding: 12px 0;
+  color: #212224;
+  font-size: 16px;
+  font-weight: bold;
+}
+#section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankTop .rankContent {
+  display: flex;
+  align-items: center;
+  padding: 20px 24px 20px 12px;
+  flex: 1 2 1;
+}
+#section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankTop .rankContent > img {
+  width: 40px;
+  height: 40px;
+  color: transparent;
+}
+#section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankTop .rankContent .rank-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  margin-left: 20px;
+}
+#section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankTop .rankContent .rank-text span {
+  color: #212224;
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+#section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankTop .rankContent .rank-text a {
+  color: rgb(154, 155, 167);
+  font-size: 14px;
+}
+#section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankTop .rankContent > a {
+  width: 48px;
+  height: 48px;
+  background-color: rgb(228, 229, 237);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius: 50%;
+}
+#section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankTop .rankContent > a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#section6 .container .section6-bottom a img {
+  width: 100%;
+  height: 100%;
+}
+
+#footer {
   width: 100%;
   height: 500px;
   background: salmon;

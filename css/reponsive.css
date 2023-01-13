@@ -19,6 +19,7 @@
     #section4 .container .section4-top-box .section4-top-box-left-reponse{display: block;}
     #section4 .container .section4-top-box .section4-top-box-right{margin-top: 20px;}
     #section4 .container .section4-bottom-box .article span{font-size: 15px;}
+
 }
 
 @media screen and (max-width: 980px){
@@ -78,6 +79,12 @@
     #section4 .container .section4-bottom-box .article h4{font-size: 13.8px;}
 
     #section5{padding: 50px 0;}
+    #section5 .container .section5-textWrap > span{display: none;}
+    #section5 .container .section5-videoWrap{display: none;}
+    #section5 .container .section5-videoWrap-resize{display: block;}
+
+    #section6{padding: 50px;}
+    #section6 .container .section6-middle{margin: 50px 0;}
 
 
 }

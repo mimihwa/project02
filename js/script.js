@@ -75,7 +75,7 @@ $('#typed').typed({
 });
 
 //section1(슬라이드)
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper("#section1 .mySwiper", {
     observer: true,
     observeParents: true,
     speed : 1000,
@@ -101,14 +101,7 @@ var swiper = new Swiper(".mySwiper", {
     autoplay: {
         delay: 3000,
         disableOnInteraction: false, 
-    },/* 
-    on: {
-        slideChange : function() {
-            let getColor = $('.swiper-slide').eq(this.realIndex).attr('data-color');
-            $('#section1').css('background-color', getColor);
-            console.log(getColor);
-        }
-    }, */
+    },
     on: {
         activeIndexChange : function() {
             let getColors=['#1E44A6', 'rgb(212, 89, 83)', 'rgb(6, 27, 66)','rgb(253, 138, 156)','rgb(0, 102, 255)','rgb(8, 169, 75)','rgb(55, 17, 108)'];
@@ -145,13 +138,11 @@ function resizeIframeS4(){
     }
 };
 
-
 //sectionBar 재사용 함수
 function sectionBar(){
     if(window.innerWidth < 1200){
         let barWidth = $('#sectionBar').width();
         let barHeight = $('#sectionBar').height();
-        console.log(barWidth);
 
         $('#sectionBar').height(barWidth*0.137);
     }
@@ -161,16 +152,40 @@ function sectionBar(){
 function resizeIframeS5(){
     if(window.innerWidth < 1200){
         var containerWidth = $('#section5 .container').width();
-        const iframeWrap=$('#section5 .container .section5-videoWrap .videoTab');
         const iframe=$('#section5 .container .section5-videoWrap .videoTab iframe');
         
-        /* iframe.width(containerWidth*0.78);
-        iframeWrap.width(containerWidth*0.78);
-        iframe.height(containerWidth*0.5);
-        iframeWrap.height(containerWidth*0.5); */
-         
+        iframe.width(containerWidth*0.327);
+        iframe.height(containerWidth*0.183);
     }
 };
+
+//section5-iframe-850
+$(document).ready(function(){
+    $('.section5-videoWrap-resize .slider-wrap').slick({
+        slide: 'div',        //슬라이드 되어야 할 태그
+        infinite : true,     //무한 반복 옵션     
+        slidesToShow : 1,        // 한 화면에 보여질 컨텐츠 개수
+        speed : 300,     // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
+        arrows : true,         // 옆으로 이동하는 화살표 표시 여부
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+    });
+});
+
+//section5-iframe-850 재사용 함수
+function resizeIframeS5R(){
+    if(window.innerWidth < 850){
+        var containerWidth = $('#section5 .container').width();
+        const iframe=$('#section5 .container .section5-videoWrap-resize .slider-wrap .slick-list .slick-track .slick-slide iframe');
+        
+        iframe.width(containerWidth*0.581);
+        iframe.height(containerWidth*0.305);
+    }
+};
+
+
+
+
 
 //유튜브 새창열림
 /* function youtubeOpen(url) {
@@ -183,6 +198,7 @@ sectionBar();
 resizeSwiper();
 resizeIframeS4();
 resizeIframeS5();
+resizeIframeS5R()
 
 $(window).resize(function(){
     
@@ -218,8 +234,10 @@ $(window).resize(function(){
     //sectionBar
     sectionBar();
     
-    //iframe(section4)
+    //iframe(section5)
     resizeIframeS5();
+
+    resizeIframeS5R()
 
 });
 
