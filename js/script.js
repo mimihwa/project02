@@ -183,6 +183,14 @@ function resizeIframeS5R(){
     }
 };
 
+//section6-rankBar
+let rankL=$('#section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankList');
+
+rankL.find('.rankContent').each(function(){
+    $(this).append("<div class='rankConBar'></div>");
+})
+
+
 
 
 

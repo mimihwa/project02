@@ -20,6 +20,16 @@
     #section4 .container .section4-top-box .section4-top-box-right{margin-top: 20px;}
     #section4 .container .section4-bottom-box .article span{font-size: 15px;}
 
+    #section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankTop .rankContent > a,
+    #section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankList .rankContent > a
+    {display: none;}
+    #section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankTop .rankContent,
+    #section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankList .rankContent
+    {justify-content: space-around; padding: 20px 12px;}
+    #section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankTop .rankContent .rank-text,
+    #section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankList .rankContent .rank-text
+    {flex: none; margin-left: 15px; margin-right: 15px;}
+
 }
 
 @media screen and (max-width: 980px){
@@ -83,8 +93,17 @@
     #section5 .container .section5-videoWrap{display: none;}
     #section5 .container .section5-videoWrap-resize{display: block;}
 
-    #section6{padding: 50px;}
-    #section6 .container .section6-middle{margin: 50px 0;}
+    #section6{padding: 50px 30px;}
+    #section6 .container .section6-middle{margin: 50px auto;}
+    #section6 .container .section6-middle .section6-middle-wrap{flex-direction: column; gap: 5px;}
+    #section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankList{display: none;}
+    #section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankTop .rankContent{padding: 20px 30px;}
+    #section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankTop .rankContent > a{display: block; margin-right: 20px;}
+    #section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankTop .rankContent > img{width: 60px; height: 60px;}
+    #section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankTop .rankContent .rank-text{margin-left: 10px; margin-right: 30px; flex-direction: row; align-items: center;}
+    #section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankTop .rankContent .rank-text a{margin-left: 10px;}
+
+    
 
 
 }
@@ -102,6 +121,11 @@
 
     #section4 .container .section4-top-box .section4-top-box-left-reponse h3{font-size: 25px;}
     #section4 .container .section4-bottom-box{display: none;}
+
+    #section6 .container .section6-middle{margin: 0;}
+    #section6 .container .section6-middle > span{font-size: 14px;}
+    #section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankTop .rankContent > a{display: none;}
+    #section6 .container .section6-top, #section6 .container .section6-bottom{display: none;}
 }
 
 @media screen and (max-width: 580px){
