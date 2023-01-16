@@ -159,7 +159,7 @@ function resizeIframeS5(){
     }
 };
 
-//section5-iframe-850
+//section5-slick-850
 $(document).ready(function(){
     $('.section5-videoWrap-resize .slider-wrap').slick({
         slide: 'div',        //슬라이드 되어야 할 태그
@@ -178,8 +178,8 @@ function resizeIframeS5R(){
         var containerWidth = $('#section5 .container').width();
         const iframe=$('#section5 .container .section5-videoWrap-resize .slider-wrap .slick-list .slick-track .slick-slide iframe');
         
-        iframe.width(containerWidth*0.581);
-        iframe.height(containerWidth*0.305);
+        iframe.width(containerWidth*0.625);
+        iframe.height(containerWidth*0.35);
     }
 };
 
@@ -191,25 +191,31 @@ rankL.find('.rankContent').each(function(){
 })
 
 
-
-
-
-
 //유튜브 새창열림
-/* function youtubeOpen(url) {
-    const option=''
-    window.open(url);
-  } */
+function openPlay1(){
+    var option="width=640,height=410,scrollbars=no";
+    window.open("https://www.youtube.com/embed/r7HULhEb0PA","",option);
+    return false;
+};
+function openPlay2(){
+    var option="width=640,height=410,scrollbars=no";
+    window.open("https://www.youtube.com/embed/3oEdjJLJdvs","",option);
+    return false;
+};
+function openPlay3(){
+    var option="width=640,height=410,scrollbars=no";
+    window.open("https://www.youtube.com/embed/8vomiFIf7ZU","",option);
+    return false;
+};
 
 
 sectionBar();
 resizeSwiper();
 resizeIframeS4();
 resizeIframeS5();
-resizeIframeS5R()
+resizeIframeS5R();
 
 $(window).resize(function(){
-    
     //모바일메뉴
     if(window.innerWidth > 850){
         $('.menu').hover(function(){
@@ -244,8 +250,7 @@ $(window).resize(function(){
     
     //iframe(section5)
     resizeIframeS5();
-
-    resizeIframeS5R()
+    resizeIframeS5R();
 
 });
 

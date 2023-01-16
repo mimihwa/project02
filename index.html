@@ -1025,7 +1025,7 @@
                     <div class="section4-top-box-left-reponse">
                         <h3>내게 필요한 모든 전문가를 만날 수 있는 크몽!</h3>
                     </div>
-                    <div class="section4-top-box-right" onclick="youtubeOpen('https://www.youtube.com/embed/jwysq-KGOgA?autoplay=0');">
+                    <div class="section4-top-box-right">
                         <iframe title="내게 필요한 모든 전문가를 만날 수 있는 크몽!" width="692" height="390" src="https://www.youtube.com/embed/jwysq-KGOgA?autoplay=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                     </div>
                 </div>
@@ -1060,16 +1060,16 @@
                     <span>204만명의 의뢰인이 98.6% 만족했습니다.</span>
                 </div>
                 <div class="section5-videoWrap">
-                    <div class="video1 videoTab">
-                        <iframe title="안재식당-자영업자님의 생생한 후기" width="375" height="210" src="https://www.youtube.com/embed/r7HULhEb0PA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                    <div class="video1 videoTab" onclick="openPlay1();">
+                        <iframe title="안재식당-자영업자님의 생생한 후기"  width="375" height="210" src="https://www.youtube.com/embed/r7HULhEb0PA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                         <div class="videoInfo">안재식당 | <span>자영업자</span></div>
                     </div>
-                    <div class="video2 videoTab">
-                        <iframe title="필로스토리-2인 창업팀님의 생생한 후기" width="375" height="210" src="https://www.youtube.com/embed/3oEdjJLJdvs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                    <div class="video2 videoTab" onclick="openPlay2();">
+                        <iframe title="필로스토리-2인 창업팀님의 생생한 후기"  width="375" height="210" src="https://www.youtube.com/embed/3oEdjJLJdvs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                         <div class="videoInfo">필로스토리 | <span>2인 창업팀</span></div>
                     </div>
-                    <div class="video3 videoTab">
-                        <iframe title="데이터비-엔터프라이즈 고객님의 생생한 후기" width="375" height="210" src="https://www.youtube.com/embed/8vomiFIf7ZU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                    <div class="video3 videoTab" onclick="openPlay3();">
+                        <iframe title="데이터비-엔터프라이즈 고객님의 생생한 후기"  width="375" height="210" src="https://www.youtube.com/embed/8vomiFIf7ZU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                         <div class="videoInfo">데이터비 | <span>엔터프라이즈 고객</span></div>
                     </div>
                 </div>
@@ -1292,45 +1292,47 @@
                 <div class="bottomInfo">
                     <div class="infoBox info1">
                         <h5>고객센터</h5>
-                        <p>10:30~18:00 (점심시간 13:00~14:00)</p>
+                        <p>10:30~18:00 (점심시간 13:00~14:00)&nbsp;&nbsp;</p>
                         <p>주말, 공휴일 휴무</p>
                         <a class="tap" role="link">1:1 문의</a>
                     </div>
-                    <div class="infoBox info2">
-                        <h5>크몽</h5>
-                        <ul class="infoList">
-                            <li><a href="javascript:;">크몽 메인</a></li>
-                            <li><a href="javascript:;">Prime</a></li>
-                            <li><a href="javascript:;">엔터프라이즈</a></li>
-                            <li><a href="javascript:;">프리랜서클럽</a></li>
-                        </ul>
-                    </div>
-                    <div class="infoBox info3">
-                        <h5>크몽 정보</h5>
-                        <ul class="infoList">
-                            <li><a href="javascript:;">서비스 소개</a></li>
-                            <li><a href="javascript:;">인재영업</a></li>
-                        </ul>
-                    </div>
-                    <div class="infoBox info4">
-                        <h5>관련사이트</h5>
-                        <ul class="infoList">
-                            <li><a href="javascript:;">크몽 블로그</a></li>
-                            <li><a href="javascript:;">크몽 포스트</a></li>
-                            <li><a href="javascript:;">크몽 포스트</a></li>
-                            <li><a href="javascript:;">크몽 인스타그램</a></li>
-                            <li><a href="javascript:;">크몽 유튜브</a></li>
-                        </ul>
-                    </div>
-                    <div class="infoBox info5">
-                        <h5>지원</h5>
-                        <ul class="infoList">
-                            <li><a href="javascript:;">공지사항</a></li>
-                            <li><a href="javascript:;">자주 묻는 질문</a></li>
-                            <li><a href="javascript:;">이용약관</a></li>
-                            <li><a href="javascript:;"><strong>개인정보처리방침</strong></a></li>
-                            <li><a href="javascript:;">전문가 센터</a></li>
-                        </ul>
+                    <div class="infoBox-wrap">
+                        <div class="infoBox info2">
+                            <h5>크몽</h5>
+                            <ul class="infoList">
+                                <li><a href="javascript:;">크몽 메인</a></li>
+                                <li><a href="javascript:;">Prime</a></li>
+                                <li><a href="javascript:;">엔터프라이즈</a></li>
+                                <li><a href="javascript:;">프리랜서클럽</a></li>
+                            </ul>
+                        </div>
+                        <div class="infoBox info3">
+                            <h5>크몽 정보</h5>
+                            <ul class="infoList">
+                                <li><a href="javascript:;">서비스 소개</a></li>
+                                <li><a href="javascript:;">인재영업</a></li>
+                            </ul>
+                        </div>
+                        <div class="infoBox info4">
+                            <h5>관련사이트</h5>
+                            <ul class="infoList">
+                                <li><a href="javascript:;">크몽 블로그</a></li>
+                                <li><a href="javascript:;">크몽 포스트</a></li>
+                                <li><a href="javascript:;">크몽 포스트</a></li>
+                                <li><a href="javascript:;">크몽 인스타그램</a></li>
+                                <li><a href="javascript:;">크몽 유튜브</a></li>
+                            </ul>
+                        </div>
+                        <div class="infoBox info5">
+                            <h5>지원</h5>
+                            <ul class="infoList">
+                                <li><a href="javascript:;">공지사항</a></li>
+                                <li><a href="javascript:;">자주 묻는 질문</a></li>
+                                <li><a href="javascript:;">이용약관</a></li>
+                                <li><a href="javascript:;"><strong>개인정보처리방침</strong></a></li>
+                                <li><a href="javascript:;">전문가 센터</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="download">
@@ -1349,7 +1351,47 @@
                 </div>
             </div>
         </div>
-        <footer id="footer"></footer>
+        <footer id="footer">
+            <div class="container">
+                <div class="footerTop">
+                    <div class="footerTop-top">
+                        <div class="topLeft">
+                            <p>(주)크몽 <span>ㅣ</span> 서울시 서초구 사임당로 157, 3층 <span>ㅣ</span> 대표 : 박현호<span>ㅣ</span></p>
+                        </div>
+                        <div class="topRight">
+                            <p>개인정보관리책임자 : 송준이 <span>ㅣ</span> 사업자등록번호 : 613-81-65278 <a href="javascript:;" role="link" target="_blank">사업자 정보확인</a></p>
+                        </div>
+                    </div>
+                    <div class="footerTop-bottom">
+                        <div class="bottomLeft">
+                            <p>통신판매업신고 : 2018-서울서초-2134 <span>ㅣ</span> 유료직업소개사업등록번호 : 제2021-3210195-14-5-00035호</p>
+                        </div>
+                        <div class="bottomRight">
+                            <p>고객센터 : 1544-6254 <span>ㅣ</span> help@kmong.com</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="footerBottom" href="javascript:;">
+                    <div class="footerBottom-top">
+                        <div class="topLeft">
+                            <p>(주)크몽은 통신판매중개자이며, 통신판매의 당사자가 아닙니다. &nbsp;</p>
+                        </div>
+                        <div class="topRight">
+                            <p>상품, 상품정보, 거래에 관한 의무와 책임은 판매회원에게 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="footerBottom-bottom">
+                        <div class="bottomLeft">
+                            <p>(주)크몽 사이트의 상품/판매회원/중개 서비스/거래 정보, 콘텐츠, UI 등에 대한 무단복제, 전송, 배포,</p>
+                        </div>
+                        <div class="bottomRight">
+                            <p>스크래핑 등의 행위는 저작권법, 콘텐츠산업 진흥법 등 관련법령에 의하여 엄격히 금지됩니다. [안내 보기]</p>
+                        </div>
+                    </div>
+                    <p class="Copyright">Copyright © 2023 kmong Inc. All rights reserved.</p>
+                </a>
+            </div>
+        </footer>
 
         <!-- 영상새창열림 -->
         <!-- <div class="kmong-modal-root" style="position: fixed; z-index: 9999; inset: 0px;">
