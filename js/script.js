@@ -185,28 +185,19 @@ function resizeIframeS5R(){
 
 //section6-rankBar
 let rankL=$('#section6 .container .section6-middle .section6-middle-wrap .rankWrap .rankList');
-
 rankL.find('.rankContent').each(function(){
     $(this).append("<div class='rankConBar'></div>");
 })
 
-
 //유튜브 새창열림
-function openPlay1(){
-    var option="width=640,height=410,scrollbars=no";
-    window.open("https://www.youtube.com/embed/r7HULhEb0PA","",option);
-    return false;
-};
-function openPlay2(){
-    var option="width=640,height=410,scrollbars=no";
-    window.open("https://www.youtube.com/embed/3oEdjJLJdvs","",option);
-    return false;
-};
-function openPlay3(){
-    var option="width=640,height=410,scrollbars=no";
-    window.open("https://www.youtube.com/embed/8vomiFIf7ZU","",option);
-    return false;
-};
+$('.cont').click(function(){
+    let $data= $(this).attr('data-video');
+    console.log($data);
+    layer_popup($data);
+    
+});
+
+
 
 
 sectionBar();
