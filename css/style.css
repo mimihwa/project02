@@ -1187,24 +1187,35 @@ button, input {
   bottom: 0;
   left: 0;
   background: #000;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 #popup .pop-layer {
   position: relative;
+  top: -1%;
   display: inline-block;
   vertical-align: middle;
-  width: 500px;
-  height: 280px;
+  width: 700px;
+  height: 420px;
 }
 #popup .pop-layer iframe {
-  width: 100%;
-  height: 100%;
+  width: 700px;
+  height: 420px;
 }
 #popup .btnClose {
-  display: none;
+  background: rgb(255, 212, 0);
+  border-radius: 4px;
+  display: block;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: -17%;
+  width: 40px;
+  height: 40px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+#popup .btnClose:hover {
+  opacity: 1;
 }
 #popup .btnClose a {
   display: block;
@@ -1212,13 +1223,13 @@ button, input {
   height: 100%;
 }
 #popup .btnClose a i {
+  top: 45%;
+  left: 5%;
   position: absolute;
   display: block;
-  width: 100%;
-  height: 2px;
+  width: 90%;
+  height: 5px;
   background: #303441;
-  top: 50%;
-  margin-top: -1px;
 }
 #popup .btnClose a i.appbar-line1 {
   transform: rotate(45deg);
