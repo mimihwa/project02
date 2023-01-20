@@ -190,14 +190,27 @@ rankL.find('.rankContent').each(function(){
 })
 
 //유튜브 새창열림
-$('.cont').click(function(){
-    let $data= $(this).attr('data-video');
-    console.log($data);
-    layer_popup($data);
+let popUp=$('.popup');
+let video=$('.section5-videoWrap .videoTab')
+//let close=$('.appbarCloseBt'); 중복 선언으로 주석처리
+
+
+if(window.innerWidth< 1200){
+    close.click(function(e){
+        e.preventdefault;
+        popUp.removeClass('on');
+    });
     
-});
-
-
+    $('.videoTab').click(function(e){
+        let data= $(this);
+        let dataVideo=$(data.attr('data-video'));
+        console.log(dataVideo);
+        
+        dataVideo.addClass('on');
+        close.stop().animate({opacity:1});
+        
+    });
+};
 
 
 sectionBar();

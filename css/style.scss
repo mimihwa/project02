@@ -1124,7 +1124,9 @@ button, input{border: none; outline: none;}
         }
     }
 }
-#popup{
+.popup{
+    display: none;
+    opacity: 0;
     position: fixed;
     top: 0;
     right: 0;
@@ -1157,6 +1159,7 @@ button, input{border: none; outline: none;}
         width: 700px;
         height: 420px;
         iframe{
+            border-radius: 5px;
             width: 700px;
             height: 420px;
         }
@@ -1194,7 +1197,11 @@ button, input{border: none; outline: none;}
     }
        
 }
-
+.popup.on{
+    display: block;
+    opacity: 1;
+    transition: .3s;
+}
 
 @keyframes blink-effect {
     50% {

@@ -1060,29 +1060,29 @@
                     <span>204만명의 의뢰인이 98.6% 만족했습니다.</span>
                 </div>
                 <div class="section5-videoWrap">
-                    <div class="video1 videoTab" onclick="openPlay1();">
+                    <div class="video1 videoTab"  data-video="#video1">
                         <iframe title="안재식당-자영업자님의 생생한 후기"  width="375" height="210" src="https://www.youtube.com/embed/r7HULhEb0PA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                         <div class="videoInfo">안재식당 | <span>자영업자</span></div>
                     </div>
-                    <div class="video2 videoTab" onclick="openPlay2();">
+                    <div class="video2 videoTab" data-video="#video2">
                         <iframe title="필로스토리-2인 창업팀님의 생생한 후기"  width="375" height="210" src="https://www.youtube.com/embed/3oEdjJLJdvs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                         <div class="videoInfo">필로스토리 | <span>2인 창업팀</span></div>
                     </div>
-                    <div class="video3 videoTab" onclick="openPlay3();">
+                    <div class="video3 videoTab" data-video="#video3">
                         <iframe title="데이터비-엔터프라이즈 고객님의 생생한 후기"  width="375" height="210" src="https://www.youtube.com/embed/8vomiFIf7ZU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                         <div class="videoInfo">데이터비 | <span>엔터프라이즈 고객</span></div>
                     </div>
                 </div>
                 <div class="section5-videoWrap-resize">
                     <div class="slider-wrap">
-                        <div class="cont" data-video="#video1">
+                        <div class="cont">
                             <iframe title="안재식당-자영업자님의 생생한 후기" width="375" height="210" src="https://www.youtube.com/embed/r7HULhEb0PA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                         </div>
-                        <div class="cont" data-video="#video2">
+                        <div class="cont" >
                             <iframe title="필로스토리-2인 창업팀님의 생생한 후기" width="375" height="210" src="https://www.youtube.com/embed/3oEdjJLJdvs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                         </div>
-                        <div class="cont" data-video="#video3">
-                            <iframe id="video3" title="데이터비-엔터프라이즈 고객님의 생생한 후기" width="375" height="210" src="https://www.youtube.com/embed/8vomiFIf7ZU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        <div class="cont" >
+                            <iframe title="데이터비-엔터프라이즈 고객님의 생생한 후기" width="375" height="210" src="https://www.youtube.com/embed/8vomiFIf7ZU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                         </div>
                     </div>
                     <button class="slick-prev slick-arrow button prev">
@@ -1391,9 +1391,9 @@
                 </a>
             </div>
         </footer> 
-        <div id="popup">
+        <div id="video1" class="popup">
             <div class="pop-bg"></div> <!-- 반투명 배경 -->
-            <div class="pop-layer" id="video1"> <!-- 팝업창 -->
+            <div class="pop-layer"> <!-- 팝업창 -->
                 <iframe title="안재식당-자영업자님의 생생한 후기" width="700" height="420" src="https://www.youtube.com/embed/r7HULhEb0PA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                 <div class="btnClose"> <!-- 클로즈버튼 -->
                     <a href="javascript:" class="appbarCloseBt" title="appbarBt">
@@ -1402,8 +1402,31 @@
                     </a>
                 </div>
             </div>
-           
         </div> 
+        <div id="video2" class="popup">
+            <div class="pop-bg"></div> <!-- 반투명 배경 -->
+            <div class="pop-layer"> <!-- 팝업창 -->
+                <iframe title="필로스토리-2인 창업팀님의 생생한 후기"  width="375" height="210" src="https://www.youtube.com/embed/3oEdjJLJdvs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                <div class="btnClose"> <!-- 클로즈버튼 -->
+                    <a href="javascript:" class="appbarCloseBt" title="appbarBt">
+                        <i class="appbar-line appbar-line1"></i>
+                        <i class="appbar-line appbar-line2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="video3" class="popup">
+            <div class="pop-bg"></div> <!-- 반투명 배경 -->
+            <div class="pop-layer"> <!-- 팝업창 -->
+                <iframe title="데이터비-엔터프라이즈 고객님의 생생한 후기"  width="375" height="210" src="https://www.youtube.com/embed/8vomiFIf7ZU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                <div class="btnClose"> <!-- 클로즈버튼 -->
+                    <a href="javascript:" class="appbarCloseBt" title="appbarBt">
+                        <i class="appbar-line appbar-line1"></i>
+                        <i class="appbar-line appbar-line2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
